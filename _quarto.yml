@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: "docs"
+website:
+  title: "Frank (Hongxiang) Fan"
+  navbar:
+    left:
+      - text: 'Home'
+        file: index.qmd
+      - text: 'Portfolio'
+        file: portfolio.qmd
+      - text: 'CV'
+        file: cv.qmd
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+editor: source
+
