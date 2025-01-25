@@ -1,0 +1,751 @@
+- author:
+  - family: Cheng
+    given: Junxiang
+  - family: Xu
+    given: Ligang
+  - family: Fan
+    given: Hongxiang
+  - family: Jiang
+    given: Jiahu
+  container-title: River Research and Applications
+  doi: 10.1002/rra.3518
+  id: ChengXuFanEtAl2019RRaA
+  issue: 9
+  issued: 2019-08
+  keyword: otherauthor
+  page: 1415-1427
+  title: Changes in the flow regimes associated with climate change and
+    human activities in the yangtze river
+  type: article-journal
+  url: "https://onlinelibrary.wiley.com/doi/10.1002/rra.3518"
+  volume: 35
+  journal-title: '*River Research and Applications*'
+  date: 2019-08
+  path: https://doi.org/10.1002/rra.3518
+  position: '3/4'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: Cheng
+    given: Junxiang
+  - family: Xu
+    given: Ligang
+  - family: Feng
+    given: Wenjuan
+  - family: Fan
+    given: Hongxiang
+  - family: Jiang
+    given: Jiahu
+  container-title: Water
+  doi: 10.3390/w11050917
+  id: ChengXuFengEtAl2019W
+  issn: 2073-4441
+  issue: 5
+  issued: 2019-05
+  keyword: otherauthor
+  title: "Changes in water level regimes in china's two largest
+    freshwater lakes: Characterization and implication"
+  title-short: Changes in water level regimes in china's two largest
+    freshwater lakes
+  type: article-journal
+  url: "https://www.mdpi.com/2073-4441/11/5/917"
+  volume: 11
+  journal-title: '*Water*'
+  date: 2019-05
+  path: https://doi.org/10.3390/w11050917
+  position: '4/5'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: Fan
+    given: Hongxiang
+  - family: Jiang
+    given: Mingliang
+  - family: Xu
+    given: Ligang
+  - family: Zhu
+    given: Hua
+  - family: Cheng
+    given: Junxiang
+  - family: Jiang
+    given: Jiahu
+  container-title: Water
+  doi: 10.3390/w12010175
+  id: FanJiangXuEtAl2020W
+  issn: 2073-4441
+  issue: 1
+  issued: 2020-01
+  keyword: firstauthor
+  title: Comparison of long short term memory networks and the
+    hydrological model in runoff simulation
+  type: article-journal
+  url: "https://www.mdpi.com/2073-4441/12/1/175"
+  volume: 12
+  journal-title: '*Water*'
+  date: 2020-01
+  path: https://doi.org/10.3390/w12010175
+  position: '1/6'
+  first: '*As first or corresponding*'
+- author:
+  - family: Fan
+    given: Hongxiang
+  - family: Xu
+    given: Ligang
+  - family: Wang
+    given: Xiaolong
+  - family: Jiang
+    given: Jiahu
+  - family: Feng
+    given: Wenjuan
+  - family: You
+    given: Hailin
+  container-title: Wetlands
+  doi: 10.1007/s13157-017-0903-7
+  genre: Journal Article
+  id: FanXuWangEtAl2019W
+  issn: 1943-6246
+  issue: 1
+  issued: 2017-04
+  keyword: firstauthor
+  page: 75-87
+  title: Relationship between vegetation community distribution patterns
+    and environmental factors in typical wetlands of poyang lake, china
+  type: article-journal
+  url: "https://link.springer.com/article/10.1007/s13157-017-0903-7"
+  volume: 39
+  journal-title: '*Wetlands*'
+  date: 2017-04
+  path: https://doi.org/10.1007/s13157-017-0903-7
+  position: '1/6'
+  first: '*As first or corresponding*'
+- author:
+  - family: Fan
+    given: Hongxiang
+  - family: Xu
+    given: Ligang
+  - family: Wang
+    given: Xiaolong
+  - family: Wu
+    given: Yuexia
+  - family: Jiang
+    given: Jiahu
+  container-title: Water Supply
+  doi: 10.2166/ws.2017.224
+  genre: Journal Article
+  id: FanXuWangEtAl2017WS
+  issn: 1606-9749
+  issue: 5
+  issued: 2017-11
+  keyword: firstauthor
+  page: 1598-1605
+  title: "Identify the influencing paths of precipitation and soil water
+    storage on runoff: An example from xinjiang river basin, poyang
+    lake, china"
+  title-short: Identify the influencing paths of precipitation and soil
+    water storage on runoff
+  type: article-journal
+  url: "https://iwaponline.com/ws/article/18/5/1598/39268/Identify-the-influencing-paths-of-precipitation"
+  volume: 18
+  journal-title: '*Water Supply*'
+  date: 2017-11
+  path: https://doi.org/10.2166/ws.2017.224
+  position: '1/5'
+  first: '*As first or corresponding*'
+- author:
+  - family: Fan
+    given: Hongxiang
+  - family: Xu
+    given: Ligang
+  - family: Tao
+    given: Hui
+  - family: Feng
+    given: Wenjuan
+  - family: Cheng
+    given: Junxiang
+  - family: You
+    given: Hailin
+  container-title: Water
+  doi: 10.3390/w9020135
+  id: FanXuTaoEtAl2017W
+  issn: 2073-4441
+  issue: 2
+  issued: 2017-02
+  keyword: firstauthor
+  title: Accessing the difference in the climate elasticity of runoff
+    across the poyang lake basin, china
+  type: article-journal
+  url: "https://www.mdpi.com/2073-4441/9/2/135"
+  volume: 9
+  journal-title: '*Water*'
+  date: 2017-02
+  path: https://doi.org/10.3390/w9020135
+  position: '1/6'
+  first: '*As first or corresponding*'
+- author:
+  - family: Huang
+    given: Tao
+  - family: Xu
+    given: Ligang
+  - family: Fan
+    given: Hongxiang
+  container-title: Water
+  doi: 10.3390/w11010013
+  id: HuangXuFan2019W
+  issn: 2073-4441
+  issue: 1
+  issued: 2018-12
+  keyword: otherauthor
+  title: Drought characteristics and its response to the global climate
+    variability in the yangtze river basin, china
+  type: article-journal
+  url: "https://www.mdpi.com/2073-4441/11/1/13"
+  volume: 11
+  journal-title: '*Water*'
+  date: 2018-12
+  path: https://doi.org/10.3390/w11010013
+  position: '3/3'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: Jiang
+    given: Mingliang
+  - family: Xu
+    given: Ligang
+  - family: Chen
+    given: Xiaobing
+  - family: Zhu
+    given: Hua
+  - family: Fan
+    given: Hongxiang
+  container-title: Sustainability
+  genre: Journal Article
+  id: JiangXuChenEtAl2020S
+  issn: 2071-1050
+  issue: 21
+  issued: 2020-10
+  keyword: otherauthor
+  page: 9033
+  title: "Soil quality assessment based on a minimum data set: A case
+    study of a county in the typical river delta wetlands"
+  title-short: Soil quality assessment based on a minimum data set
+  type: article-journal
+  url: "https://www.mdpi.com/2071-1050/12/21/9033"
+  volume: 12
+  journal-title: '*Sustainability*'
+  date: 2020-10
+  position: '5/5'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: Li
+    given: Jing
+  - family: Song
+    given: Fan
+  - family: Bao
+    given: Zhicheng
+  - family: Fan
+    given: Hongxiang
+  - family: Wu
+    given: Huawu
+  container-title: Water
+  genre: Journal Article
+  id: LiSongBaoEtAl2022W
+  issn: 2073-4441
+  issue: 3
+  issued: 2022-02
+  keyword: otherauthor
+  page: 506
+  title: Insights into shallow freshwater lakes hydrology in the yangtze
+    floodplain from stable water isotope tracers
+  type: article-journal
+  url: "https://www.mdpi.com/2073-4441/14/3/506"
+  volume: 14
+  journal-title: '*Water*'
+  date: 2022-02
+  position: '4/5'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: Wu
+    given: Huawu
+  - family: Fan
+    given: Hongxiang
+  - family: Lei
+    given: Ruiyu
+  - family: Sun
+    given: Chijun
+  - family: Wang
+    given: Shengjie
+  - family: Wu
+    given: Haohao
+  - family: Fu
+    given: Congsheng
+  container-title: Journal of Hydrology
+  doi: 10.1016/j.jhydrol.2023.129835
+  id: WuFanLeiEtAl2023JoH
+  issn: 0022-1694
+  issued: 2023-08
+  keyword: firstauthor
+  page: 129835
+  title: Atmospheric processes control the stable isotopic variability
+    of precipitation in the middle--lower reaches of the yangtze river
+    basin, east asian monsoon region
+  type: article-journal
+  url: "https://www.sciencedirect.com/science/article/pii/S0022169423007771"
+  volume: 623
+  journal-title: '*Journal of Hydrology*'
+  date: 2023-08
+  path: https://doi.org/10.1016/j.jhydrol.2023.129835
+  position: '2/7'
+  first: '*As first or corresponding*'
+- author:
+  - family: Xu
+    given: Guoyu
+  - family: Fan
+    given: Hongxiang
+  - family: Oliver
+    given: David M.
+  - family: Dai
+    given: Yibin
+  - family: Li
+    given: Hengpeng
+  - family: Shi
+    given: Yuejie
+  - family: Long
+    given: Haifei
+  - family: Xiong
+    given: Kangning
+  - family: Zhao
+    given: Zhongming
+  container-title: Environmental Research
+  doi: 10.1016/j.envres.2022.113843
+  genre: Journal Article
+  id: XuFanOliverEtAl2022ER
+  issn: 0013-9351
+  issued: 2022-11
+  keyword: otherauthor
+  page: 113843
+  title: Decoding river pollution trends and their landscape
+    determinants in an ecologically fragile karst basin using a machine
+    learning model
+  type: article-journal
+  url: "https://www.sciencedirect.com/science/article/pii/S0013935122011707"
+  volume: 214
+  journal-title: '*Environmental Research*'
+  date: 2022-11
+  path: https://doi.org/10.1016/j.envres.2022.113843
+  position: '2/9'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: You
+    given: Hailin
+  - family: Fan
+    given: Hongxiang
+  - family: Xu
+    given: Ligang
+  - family: Wu
+    given: Yongming
+  - family: Liu
+    given: Lizhen
+  - family: Yao
+    given: Zhong
+  container-title: Water
+  doi: 10.3390/w11040825
+  id: YouFanXuEtAl2019W
+  issn: 2073-4441
+  issue: 4
+  issued: 2019-04
+  keyword: otherauthor
+  title: Poyang lake wetland ecosystem health assessment of using the
+    wetland landscape classification characteristics
+  type: article-journal
+  url: "https://www.mdpi.com/2073-4441/11/4/825"
+  volume: 11
+  journal-title: '*Water*'
+  date: 2019-04
+  path: https://doi.org/10.3390/w11040825
+  position: '2/6'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: You
+    given: Hailin
+  - family: Fan
+    given: Hongxiang
+  - family: Xu
+    given: Ligang
+  - family: Wu
+    given: Yongming
+  - family: Wang
+    given: Xiaolong
+  - family: Liu
+    given: Lizhen
+  - family: Yao
+    given: Zhong
+  - family: Yan
+    given: Bangyou
+  container-title: Water
+  doi: 10.3390/w9070467
+  id: YouFanXuEtAl2017W
+  issn: 2073-4441
+  issue: 7
+  issued: 2017-06
+  keyword: otherauthor
+  title: Effects of water regime on spring wetland landscape evolution
+    in poyang lake between 2000 and 2010
+  type: article-journal
+  url: "https://www.mdpi.com/2073-4441/9/7/467"
+  volume: 9
+  journal-title: '*Water*'
+  date: 2017-06
+  path: https://doi.org/10.3390/w9070467
+  position: '2/8'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: Zhu
+    given: Hua
+  - family: Xu
+    given: Ligang
+  - family: Jiang
+    given: Jiahu
+  - family: Fan
+    given: Hongxiang
+  container-title: Water
+  doi: 10.3390/w11081705
+  id: ZhuXuJiangEtAl2019W
+  issn: 2073-4441
+  issue: 8
+  issued: 2019-08
+  keyword: otherauthor
+  title: Spatiotemporal variations of summer precipitation and their
+    correlations with the east asian summer monsoon in the poyang lake
+    basin, china
+  type: article-journal
+  url: "https://www.mdpi.com/2073-4441/11/8/1705"
+  volume: 11
+  journal-title: '*Water*'
+  date: 2019-08
+  path: https://doi.org/10.3390/w11081705
+  position: '4/4'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: Xu
+    given: Jiaxing
+  - family: Fan
+    given: Hongxiang
+  - family: Luo
+    given: Minghan
+  - family: Li
+    given: Piji
+  - family: Jeong
+    given: Taeseop
+  - family: Xu
+    given: Ligang
+  container-title: Water
+  doi: 10.3390/w15030576
+  id: XuFanLuoEtAl2023W
+  issn: 2073-4441
+  issue: 3
+  issued: 2023-02
+  keyword: firstauthor
+  title: Transformer based water level prediction in poyang lake, china
+  type: article-journal
+  url: "https://www.mdpi.com/2073-4441/15/3/576"
+  volume: 15
+  journal-title: '*Water*'
+  date: 2023-02
+  path: https://doi.org/10.3390/w15030576
+  position: '2/6'
+  first: '*As first or corresponding*'
+- author:
+  - family: Fan
+    given: Hongxiang
+  - family: Song
+    given: Fan
+  - family: Wu
+    given: Huawu
+  - family: Du
+    given: Yao
+  - family: Lei
+    given: Ruiyu
+  - family: Ding
+    given: Mengyao
+  - family: Li
+    given: Kaiwen
+  - family: Li
+    given: Jing
+  - family: Fu
+    given: Congsheng
+  container-title: "Journal of Hydrology: Regional Studies"
+  doi: 10.1016/j.ejrh.2024.102049
+  id: FanSongWuEtAl2024JoHRS
+  issn: 2214-5818
+  issued: 2024-12
+  keyword: firstauthor
+  page: 102049
+  title: "Identifying the pattern of shallow groundwater hydrochemistry
+    and its driving factors in a typical estuarine delta of poyang lake
+    watershed, china: Insights into water quality assessment"
+  title-short: Identifying the pattern of shallow groundwater
+    hydrochemistry and its driving factors in a typical estuarine delta
+    of poyang lake watershed, china
+  type: article-journal
+  url: "https://www.sciencedirect.com/science/article/pii/S2214581824003987"
+  volume: 56
+  journal-title: '*"Journal of Hydrology: Regional Studies"*'
+  date: 2024-12
+  path: https://doi.org/10.1016/j.ejrh.2024.102049
+  position: '1/9'
+  first: '*As first or corresponding*'
+- author:
+  - family: Xiong
+    given: Chuanhe
+  - family: Li
+    given: Hengpeng
+  - family: Fan
+    given: Hongxiang
+  - family: Askar
+    given: Akida
+  container-title: Science of The Total Environment
+  doi: 10.1016/j.scitotenv.2024.173240
+  id: XiongLiFanEtAl2024SoTTE
+  issn: 0048-9697
+  issued: 2024-07
+  keyword: otherauthor
+  page: 173240
+  title: Historical development, impact mechanism and future trends of
+    nitrogen footprint in wuxi city, china
+  type: article-journal
+  url: "https://www.sciencedirect.com/science/article/pii/S0048969724033874"
+  volume: 934
+  journal-title: '*Science of The Total Environment*'
+  date: 2024-07
+  path: https://doi.org/10.1016/j.scitotenv.2024.173240
+  position: '3/4'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: Li
+    given: Xianghu
+  - family: Yuan
+    given: Canyu
+  - family: Sun
+    given: Tong
+  - family: Fan
+    given: Hongxiang
+  container-title: "Journal of Hydrology: Regional Studies"
+  doi: 10.1016/j.ejrh.2024.101912
+  id: LiYuanSunEtAl2024JoHRS
+  issn: 2214-5818
+  issued: 2024-08
+  keyword: otherauthor
+  page: 101912
+  title: Identifying the spatiotemporal patterns of drought-flood
+    alternation based on IMERG product in the humid subtropical poyang
+    lake basin, china
+  type: article-journal
+  url: "https://www.sciencedirect.com/science/article/pii/S2214581824002611"
+  volume: 54
+  journal-title: '*"Journal of Hydrology: Regional Studies"*'
+  date: 2024-08
+  path: https://doi.org/10.1016/j.ejrh.2024.101912
+  position: '4/4'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: Liu
+    given: Yingying
+  - family: He
+    given: Hongming
+  - family: Zhou
+    given: Jie
+  - family: Fan
+    given: Hongxiang
+  - family: Wu
+    given: Qinglong
+  - family: Delang
+    given: Claudio O.
+  container-title: Ecological Indicators
+  doi: 10.1016/j.ecolind.2024.112202
+  id: LiuHeZhouEtAl2024EI
+  issn: 1470-160X
+  issued: 2024-08
+  keyword: otherauthor
+  page: 112202
+  title: "Understanding thermal stratification and circulation dynamics
+    in fuxian lake: Insights from EFDC simulation study"
+  title-short: Understanding thermal stratification and circulation
+    dynamics in fuxian lake
+  type: article-journal
+  url: "https://www.sciencedirect.com/science/article/pii/S1470160X24006599"
+  volume: 165
+  journal-title: '*Ecological Indicators*'
+  date: 2024-08
+  path: https://doi.org/10.1016/j.ecolind.2024.112202
+  position: '4/6'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: Wu
+    given: Huawu
+  - family: Fan
+    given: Hongxiang
+  - family: Li
+    given: Jing
+  - family: Yue
+    given: Fu-Jun
+  - family: Lian
+    given: Ergang
+  - family: Fu
+    given: Congsheng
+  - family: Lei
+    given: Ruiyu
+  - family: Ding
+    given: Mengyao
+  - family: Liu
+    given: Jinzhao
+  - family: Li
+    given: Xiao-Yan
+  container-title: Journal of Hydrology
+  doi: 10.1016/j.jhydrol.2024.131565
+  id: WuFanLiEtAl2024JoH
+  issn: 0022-1694
+  issued: 2024-07
+  keyword: firstauthor
+  page: 131565
+  title: "Reproducing surface water isoscapes of $\\delta^{18}$o and
+    $\\delta^2$h across china: A machine learning approach"
+  title-short: Reproducing surface water isoscapes of $\delta^{18}$o and
+    $\delta^2$h across china
+  type: article-journal
+  url: "https://www.sciencedirect.com/science/article/pii/S0022169424009612"
+  volume: 638
+  journal-title: '*Journal of Hydrology*'
+  date: 2024-07
+  path: https://doi.org/10.1016/j.jhydrol.2024.131565
+  position: '2/10'
+  first: '*As first or corresponding*'
+- author:
+  - family: Xu
+    given: Chengyu
+  - family: Yuan
+    given: Canyu
+  - family: Li
+    given: Xianghu
+  - family: Lin
+    given: Yaling
+  - family: Fan
+    given: Hongxiang
+  container-title: Hydrology Research
+  doi: 10.2166/nh.2023.141
+  id: XuYuanLiEtAl2023HR
+  issn: 0029-1277
+  issue: 3
+  issued: 2023-03
+  keyword: otherauthor
+  page: 401-417
+  title: Projection of disaster-causing risk of extreme precipitation in
+    the yangtze river basin based on CMIP6
+  type: article-journal
+  volume: 54
+  journal-title: '*Hydrology Research*'
+  date: 2023-03
+  path: https://doi.org/10.2166/nh.2023.141
+  position: '5/5'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: Cheng
+    given: Junxiang
+  - family: Xu
+    given: Ligang
+  - family: Wang
+    given: Rong
+  - family: You
+    given: Hailin
+  - family: Fan
+    given: Hongxiang
+  - family: Wu
+    given: Yakun
+  container-title: Ecohydrology & Hydrobiology
+  doi: 10.1016/j.ecohyd.2023.09.004
+  id: ChengXuWangEtAl2023E&H
+  issn: 1642-3593
+  issued: 2024-07
+  keyword: otherauthor
+  title: Comprehensive evaluation of environmental flows in the yangtze
+    river regulated by two large dams
+  type: article-journal
+  url: "https://www.sciencedirect.com/science/article/pii/S1642359323001052"
+  volume: 24
+  journal-title: '*Ecohydrology & Hydrobiology*'
+  date: 2024-07
+  path: https://doi.org/10.1016/j.ecohyd.2023.09.004
+  position: '5/6'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: Lei
+    given: Xiangyong
+  - family: Gao
+    given: Lu
+  - family: Wei
+    given: Jianhui
+  - family: Ma
+    given: Miaomiao
+  - family: Xu
+    given: Ligang
+  - family: Fan
+    given: Hongxiang
+  - family: Li
+    given: Xianghu
+  - family: Gao
+    given: Jianyun
+  - family: Dang
+    given: Haofei
+  - family: Chen
+    given: Xingwei
+  - family: Fang
+    given: Weihua
+  container-title: Physics and Chemistry of the Earth, Parts A/B/C
+  doi: 10.1016/j.pce.2021.103019
+  id: LeiGaoWeiEtAl2021PaCotEPA
+  issn: 1474-7065
+  issued: 2021-10
+  keyword: otherauthor
+  page: 103019
+  title: Contributions of climate change and human activities to runoff
+    variations in the poyang lake basin of china
+  type: article-journal
+  url: "https://www.sciencedirect.com/science/article/pii/S1474706521000528"
+  volume: 123
+  journal-title: '*Physics and Chemistry of the Earth, Parts A/B/C*'
+  date: 2021-10
+  path: https://doi.org/10.1016/j.pce.2021.103019
+  position: '6/11'
+  position: '11/11'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: Fan
+    given: Longfeng
+  - family: Cheng
+    given: Junxiang
+  - family: Xie
+    given: Yangcun
+  - family: Xu
+    given: Ligang
+  - family: Buttler
+    given: Alexandre
+  - family: Wu
+    given: Yuexia
+  - family: Fan
+    given: Hongxiang
+  - family: Wu
+    given: Yakun
+  container-title: Science of The Total Environment
+  doi: 10.1016/j.scitotenv.2024.170689
+  id: FanChengXieEtAl2024SoTTE
+  issn: 0048-9697
+  issued: 2024-03
+  keyword: otherauthor
+  page: 170689
+  title: Spatio-temporal patterns and drivers of CH$_4$ and CO$_2$
+    fluxes from rivers and lakes in highly urbanized areas
+  type: article-journal
+  url: "https://www.sciencedirect.com/science/article/pii/S0048969724008283"
+  volume: 918
+  journal-title: '*Science of The Total Environment*'
+  date: 2024-03
+  path: https://doi.org/10.1016/j.scitotenv.2024.170689
+  position: '1/8'
+  position: '7/8'
+  first: '&emsp;&emsp;&emsp;'

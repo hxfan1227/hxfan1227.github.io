@@ -1,18 +1,77 @@
 ---
-title: "About"
-image: profile.jpg
+title: "Frank (Hongxiang) Fan"
+subtitle: |
+  Data analysist, numerical modeller, hydrogeologist, and assistant professor
+image: assets/images/social-profile.png
 about:
-  template: jolla
+  id: edu-exp
+  template: solana
+  image-width: 9em
+  image-shape: round
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
-    - icon: github
-      text: Github
-      href: https://github.com
+    - text: "{{< iconify fa6-solid:envelope >}}"
+      href: "mailto:hxfan@niglas.ac.cn"
+      aria-label: "envelope logo for email"
+    - text: "{{< iconify fa6-brands:orcid >}}"
+      href: "https://orcid.org/0000-0001-7626-1344"
+      aria-label: "ORCID logo linking to ORCID account"
+    # - text: "{{< iconify fa6-brands:mastodon >}}"
+    #   href: "https://fosstodon.org/@MickaelCanouil"
+    #   aria-label: "Mastodon logo linking to MickaelCanouil Fosstodon account"
+    #   rel: me
+    # - text: "{{< iconify fa6-brands:bluesky >}}"
+    #   href: "https://bsky.app/profile/mickael.canouil.fr"
+    #   aria-label: "BlueSky logo linking to mickael.canouil.fr account"
+    # - text: "{{< iconify fa6-brands:x-twitter >}}"
+    #   href: "https://x.com/MickaelCanouil"
+    #   aria-label: "X (Twitter) logo linking to MickaelCanouil account"
+    - text: "{{< iconify fa6-brands:linkedin >}}"
+      href: "https://www.linkedin.com/in/hongxiang-fan-aa13bb90/"
+      aria-label: "LinkedIn logo linking to hongxiang fan account"
+    - text: "{{< iconify octicon:mark-github-16 >}}"
+      href: "https://github.com/hxfan1227"
+      aria-label: "GitHub logo linking to mcanouil account"
+    # - text: "{{< iconify octicon:heart-fill-16 >}} Sponsor"
+    #   href: "https://github.com/sponsors/mcanouil?o=esb"
+    #   aria-label: "GitHub Sponsor mcanouil"
 ---
 
-About this blog
+::: {#edu-exp}
+:::
+
+I am currently working as an assistant professor in __*Nanjing Institute of Geography and Limonology, Chinese Academy of Sciences (NIGLAS)*__ in the field of physical geography , *i.e.*, water quality modelling, hydrodynamics, tracer-hydrology, *etc.* in Nanjing, China.  
+
+Additionally, I am also a __*Honorary visiting scholar*__, working with Prof. [Adrian Werner](https://www.flinders.edu.au/people/adrian.werner) on surface-groundwater interaction related projects in __*Flinders University*__.  
+
+I have developed a few {{< iconify fa6-brands:r-project >}}&nbsp;packages (_e.g._,&nbsp;[SGDr](https://hxfan1227.github.io/SGDr), [efdcr](https://hxfan1227.github.io/efdcr/)), and although most of them are personal use solely, hopefully some will be helpful.
+
+Have a look at my complete [_{{< iconify fa6-regular file-lines >}} curriculum vitae_](fhx_resume.pdf).
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-8 style="text-align: left;"}
+## Education
+
+- **_Ph.D._ in Physical Ggeography**, **2016**  
+  *University Chinese Academy of Sciences, Beijing, China*
+
+- **_M.Sc._ in Physical Geography**, **2013**  
+  *University Chinese Academy of Sciences, Beijing, China*
+
+- **_B.Sc._ in Enviromental Engineering**, **2009**  
+  *Huazhong Agriclutural University, Wuhan, China*
+:::
+
+::: {.g-col-12 .g-col-md-4 style="text-align: left;"}
+## Interests
+
+- Badminton
+- Coding
+- Numerical modelling
+- Data Analysis
+- Data visualization
+- Knowledge sharing
+- Learning new skills
+:::
+
+::::

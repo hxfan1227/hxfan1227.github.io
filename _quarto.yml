@@ -1,26 +1,85 @@
 project:
   type: website
+  pre-render:
+    - publications.r
   output-dir: "docs"
+  resources:
+    - _headers
 website:
   title: "Frank (Hongxiang) Fan"
+  description: "A data science blog and portfolio of Hongxiang Fan"
+  image: /assets/images/social-profile.png
+  site-url: hxfan1227.github.io
+  repo-url: https://github.com/hxfan1227/hxfan1227.github.io
+  page-navigation: true
+  back-to-top-navigation: true
+  page-footer:
+    border: true
+    left: |
+      Powered by [{{< iconify simple-icons:quarto >}} Quarto](https://quarto.org).
+    center: |
+      &copy; []{#current-year} Hongxiang Fan. [{{< iconify octicon:mark-github-16 >}}](https://github.com/hxfan1227).
+    right: |
+      License: [CC BY NC SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0).
   navbar:
-    left:
-      - text: 'Home'
-        file: index.qmd
-      - text: 'Portfolio'
-        file: portfolio.qmd
-      - text: 'CV'
-        file: cv.qmd
+    title: "Frank (Hongxiang) Fan"
+    search: true
+    logo: assets/images/logo.svg
     right:
-      - about.qmd
-      - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+      - text: About
+        href: index.qmd
+      # - text: Blog
+        # href: blog.qmd
+      # - text: Projects
+        # href: projects.qmd
+      # - text: Talks
+        # href: talks.qmd
+      - text: Publications
+        href: publications.qmd
+      - text: "{{< ai google-scholar >}}"
+        href: "https://scholar.google.com.au/citations?user=Tv5IC0kAAAAJ&hl=en"
+      - text: "{{< ai orcid>}}"
+        href: "https://orcid.org/0000-0001-7626-1344"
+      - text: "{{< iconify octicon:mark-github-16 >}}"
+        href: "https://github.com/hxfan1227"
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    # theme:
+    #   - assets/stylesheets/coeos.scss
+    #   - assets/stylesheets/projects.scss
+    lang: en
+    date-format: 'dddd[, the] Do [of] MMMM, YYYY'
+    highlight-style: github-dark
+    code-copy: true
+    code-link: true
+    anchor-sections: true
+    email-obfuscation: javascript
+    link-external-newwindow: true
+    fig-align: center
+    code-tools:
+      source: false
+      toggle: false
+      caption: none
+    include-after-body:
+      - text: |
+          <script type="text/javascript">
+            const dateElements = document.querySelectorAll("p.date, div.listing-date, div.listing-file-modified");
+            dateElements.forEach((el) => {
+              el.innerHTML = el.innerHTML.replace(
+                /(\d+)(st|nd|rd|th)/g,
+                "$1<sup style='font-size:0.5em;font-style:italic;'>$2</sup>"
+              );
+            });
+          </script>
+          <script>
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+          </script>
+
+lightbox: auto
 
 editor: source
+
+execute:
+  freeze: true
+
 
