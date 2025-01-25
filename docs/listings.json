@@ -2,7 +2,6 @@
   {
     "listing": "/portfolio.html",
     "items": [
-      "/posts/post-with-code/index.html",
       "/posts/welcome/index.html"
     ]
   },
@@ -13,5 +12,11 @@
   {
     "listing": "/projects.html",
     "items": []
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/welcome/index.html"
+    ]
   }
 ]

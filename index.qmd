@@ -45,7 +45,7 @@ about:
 
 <div style="flex: 1;">
 
-I am currently working as an assistant professor in __*Nanjing Institute of Geography and Limonology, Chinese Academy of Sciences (NIGLAS)*__ in the field of physical geography , *i.e.*, water quality modelling, hydrodynamics, tracer-hydrology, *etc.* in Nanjing, China.  
+I am currently working as a __*Research assistant*__ in __*Nanjing Institute of Geography and Limonology, Chinese Academy of Sciences (NIGLAS)*__ in the field of physical geography , *i.e.*, water quality modelling, hydrodynamics, tracer-hydrology, *etc.* in Nanjing, China.  
 
 Additionally, I am also a __*Honorary visiting scholar*__, working with Prof. [Adrian Werner](https://www.flinders.edu.au/people/adrian.werner) on surface-groundwater interaction related projects in __*Flinders University*__.  
 

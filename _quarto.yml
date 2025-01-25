@@ -28,8 +28,8 @@ website:
     right:
       - text: About
         href: index.qmd
-      # - text: Blog
-        # href: blog.qmd
+      - text: Blog
+        href: blog.qmd
       # - text: Projects
         # href: projects.qmd
       # - text: Talks
@@ -45,7 +45,7 @@ website:
 format:
   html:
     theme:
-      cerulean
+      - assets/stylesheets/coeos.scss
     lang: en
     date-format: 'dddd[, the] Do [of] MMMM, YYYY'
     highlight-style: github-dark
