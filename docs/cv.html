@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.5.57">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Frank (Hongxiang) Fan</title>
+
+
+<title>Curriculum Vitae – Frank (Hongxiang) Fan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -17,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
@@ -29,6 +52,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -37,9 +61,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <link href="site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
+<script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -66,14 +88,50 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="assets/stylesheets/cv.css">
 </head>
-<body class="nav-fixed fullcontent">
+
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/images/logo.svg" alt="" class="navbar-logo"></a>
+    <img src="./assets/images/logo.svg" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Frank (Hongxiang) Fan</span>
     </a>
@@ -84,8 +142,8 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-<li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -93,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link active" href="./cv.html" aria-current="page"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
@@ -113,86 +171,235 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"><iconify-icon role="img" inline="" icon="octicon:mark-github-16" aria-label="Icon mark-github-16 from octicon Iconify.design set." title="Icon mark-github-16 from octicon Iconify.design set."></iconify-icon></span></a>
   </li>  
 </ul>
-</div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
-<!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content"><div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">Frank (Hongxiang) Fan</h1>
-<p class="subtitle lead"></p>
-<p>Data analysist, numerical modeller, hydrogeologist, and research assitant</p>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header> <div class="about-links">
-  <a href="mailto:hxfan@niglas.ac.cn" class="about-link" rel="" target="">
-     <span class="about-link-text"><iconify-icon role="img" inline="" icon="fa6-solid:envelope" aria-label="Icon envelope from fa6-solid Iconify.design set." title="Icon envelope from fa6-solid Iconify.design set."></iconify-icon></span>
-  </a>
-  <a href="https://orcid.org/0000-0001-7626-1344" class="about-link" rel="" target="">
-     <span class="about-link-text"><iconify-icon role="img" inline="" icon="fa6-brands:orcid" aria-label="Icon orcid from fa6-brands Iconify.design set." title="Icon orcid from fa6-brands Iconify.design set."></iconify-icon></span>
-  </a>
-  <a href="https://www.linkedin.com/in/hongxiang-fan-aa13bb90/" class="about-link" rel="" target="">
-     <span class="about-link-text"><iconify-icon role="img" inline="" icon="fa6-brands:linkedin" aria-label="Icon linkedin from fa6-brands Iconify.design set." title="Icon linkedin from fa6-brands Iconify.design set."></iconify-icon></span>
-  </a>
-  <a href="https://github.com/hxfan1227" class="about-link" rel="" target="">
-     <span class="about-link-text"><iconify-icon role="img" inline="" icon="octicon:mark-github-16" aria-label="Icon mark-github-16 from octicon Iconify.design set." title="Icon mark-github-16 from octicon Iconify.design set."></iconify-icon></span>
-  </a>
-</div>
-      <div class="about-contents"><div id="edu-exp" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;">
-<div style="flex: 0 0 100px; text-align: center;">
-<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=dzSypRsW3GDXw5oj_5A1DO4C9hHGvQn0T4t3tN4BBZc"></script>
-</div>
-<div style="flex: 1;">
-<p>I am currently working as a <strong><em>Research assistant</em></strong> in <strong><em>Nanjing Institute of Geography and Limonology, Chinese Academy of Sciences (NIGLAS)</em></strong> in the field of physical geography , <em>i.e.</em>, water quality modelling, hydrodynamics, tracer-hydrology, <em>etc.</em> in Nanjing, China.</p>
-<p>Additionally, I am also a <strong><em>Honorary visiting scholar</em></strong>, working with Prof.&nbsp;<a href="https://www.flinders.edu.au/people/adrian.werner">Adrian Werner</a> on surface-groundwater interaction related projects in <strong><em>Flinders University</em></strong>.</p>
-<p>I have developed a few <iconify-icon role="img" inline="" icon="fa6-brands:r-project" aria-label="Icon r-project from fa6-brands Iconify.design set." title="Icon r-project from fa6-brands Iconify.design set."></iconify-icon>&nbsp;packages (<em>e.g.</em>,&nbsp;<a href="https://hxfan1227.github.io/SGDr">SGDr</a>, <a href="https://hxfan1227.github.io/efdcr/">efdcr</a>), and although most of them are personal use solely, hopefully some will be helpful.</p>
-<p>Have a look at my complete <a href="fhx_resume.pdf"><em><iconify-icon role="img" inline="" icon="fa6-regular:file-lines" aria-label="Icon file-lines from fa6-regular Iconify.design set." title="Icon file-lines from fa6-regular Iconify.design set."></iconify-icon> curriculum vitae</em></a>.</p>
-</div>
-</div></div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">EDUCATION</a></li>
+  <li><a href="#research-experience" id="toc-research-experience" class="nav-link" data-scroll-target="#research-experience">RESEARCH EXPERIENCE</a>
+  <ul class="collapse">
+  <li><a href="#honorary-visiting-scholar" id="toc-honorary-visiting-scholar" class="nav-link" data-scroll-target="#honorary-visiting-scholar">Honorary visiting scholar</a></li>
+  <li><a href="#research-assistant" id="toc-research-assistant" class="nav-link" data-scroll-target="#research-assistant">Research assistant</a></li>
+  <li><a href="#ph.d.-candidate" id="toc-ph.d.-candidate" class="nav-link" data-scroll-target="#ph.d.-candidate">Ph.D.&nbsp;Candidate</a></li>
+  </ul></li>
+  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="cv.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
-    <img src="assets/images/social-profile.png" class="about-image
-  round " style="height: 9em; width: 9em;">
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Curriculum Vitae</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
   </div>
-</div>
+  
 
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure"><p><a href="index_files/figure-html/unnamed-chunk-1-1.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="index_files/figure-html/unnamed-chunk-1-1.svg" class="img-fluid figure-img" style="width:100.0%"></a></p>
-</figure>
+
+</header>
+
+
+<div class="print-only contact-block">
+<p>hxfan@niglas.ac.cn</p>
 </div>
-</div>
-</div>
-<div class="grid">
-<section id="education" class="level2 g-col-12 g-col-md-8" style="text-align: left;"><h2 data-anchor-id="education">Education</h2>
+<section id="education" class="level2">
+<h2 class="anchored" data-anchor-id="education">EDUCATION</h2>
+<p><strong>Ph.D.&nbsp;in Physical Ggeography</strong> <br> <em>University of Chinese Academy of Sciences</em> <span class="cvdate"><em>Sep 2016 — Jul 2019</em></span></p>
+<p><strong>M.Sc. in Physical Geography</strong> <br> <em>University of Chinese Academy of Sciences</em> <span class="cvdate"><em>Sep 2013 — Jul 2016</em></span></p>
+<p><strong>B.Sc. in Enviromental Engineering</strong> <br> <em>Huazhong Agriclutural University</em> <span class="cvdate"><em>Sep 2009 — Jul 2013</em></span></p>
+</section>
+<section id="research-experience" class="level2">
+<h2 class="anchored" data-anchor-id="research-experience">RESEARCH EXPERIENCE</h2>
+<section id="honorary-visiting-scholar" class="level3">
+<h3 class="anchored" data-anchor-id="honorary-visiting-scholar">Honorary visiting scholar</h3>
+<p><strong><em>Flinders University, South Australia</em></strong> <span class="cvdate">Jan 2024 – Present</span></p>
+<p>Work with Prof.&nbsp;<a href="https://www.flinders.edu.au/people/adrian.werner">Adrian Werner</a> on surface-groundwater interaction related projects.</p>
 <ul>
-<li><p><strong><em>Ph.D.</em> in Physical Ggeography</strong>, <strong>2019</strong><br><em>University Chinese Academy of Sciences, Beijing, China</em></p></li>
-<li><p><strong><em>M.Sc.</em> in Physical Geography</strong>, <strong>2016</strong><br><em>University Chinese Academy of Sciences, Beijing, China</em></p></li>
-<li><p><strong><em>B.Sc.</em> in Enviromental Engineering</strong>, <strong>2013</strong><br><em>Huazhong Agriclutural University, Wuhan, China</em></p></li>
-</ul></section><section id="interests" class="level2 g-col-12 g-col-md-4" style="text-align: left;"><h2 data-anchor-id="interests">Interests</h2>
+<li>Focus on coastal hydrology and surface-groundwater interactions.</li>
+<li>Submarine Freshwater Groundwater Discharge (SFGD).</li>
+</ul>
+</section>
+<section id="research-assistant" class="level3">
+<h3 class="anchored" data-anchor-id="research-assistant">Research assistant</h3>
+<p><strong><em>Nanjing Institute of Geography and Limnology, Chinese Academy of Sciences</em></strong> <span class="cvdate">Jul 2019 – Present</span></p>
 <ul>
-<li>Badminton</li>
-<li>Coding</li>
-<li>Numerical modelling</li>
-<li>Data Analysis</li>
-<li>Data visualization</li>
-<li>Knowledge sharing</li>
-<li>Learning new skills</li>
-</ul></section>
+<li>Built a fully coupled model for surface-groundwater interaction in floodplain wetlands.</li>
+<li>Developed a new algorithm for evaluating surface hydrological connectivity with parallel computing technique.</li>
+<li>Explored how convective behaviors and moisture sources determine the variability of precipitation stable isotope</li>
+<li>Developed a random forest model to predict river isotopes across China at the catchment scale.</li>
+</ul>
+</section>
+<section id="ph.d.-candidate" class="level3">
+<h3 class="anchored" data-anchor-id="ph.d.-candidate">Ph.D.&nbsp;Candidate</h3>
+<p><strong><em>University of Chinese Academy of Science</em></strong> <span class="cvdate">Sep 2016 – Jul 2019</span></p>
+<ul>
+<li>Built a 2D water environment model for Poyang Lake in China and coupled it with a runoff prediction model.</li>
+<li>Attributed the relative contributions of climate change and anthropogenic activities on the water environment.</li>
+</ul>
+</section>
+</section>
+<div id="refs" class="references csl-bib-body" role="list">
+<section id="publications" class="level2" style="page-break-before: always">
+<h2 style="page-break-before: always" class="anchored" data-anchor-id="publications">Publications</h2>
+<div id="ref-MengYeXuEtAl2018WS_CH" class="csl-entry" role="listitem">
+1. 孟元可, 叶许春, 徐力刚, 徐昔保, 范宏翔, 黄涛. <a href="https://doi.org/10.13248/j.cnki.wetlandsci.2018.03.013">2000–2015年鄱阳湖区植被净初级生产力变化及驱动因素分析</a>. 湿地科学. 2018;16:360–9.
+</div>
+<div id="ref-FengXuFanEtAl2015JoSNUNSE_CH" class="csl-entry" role="listitem">
+2. 冯文娟, 徐力刚, 范宏翔, 李新艳, 董磊. <a href="https://doi.org/10.15983/j.cnki.jsnu.2015.04.441">梅西湖与鄱阳湖水位变化关系及其水量交换过程分析</a>. 陕西师范大学学报(自然科学版). 2015;43:83–8.
+</div>
+<div id="ref-MaoXuLaiEtAl2023JoLS_CH" class="csl-entry" role="listitem">
+3. 毛智宇, 徐力刚, 赖锡军, 王晓龙, 李云良, 李相虎, et al. <a href="https://doi.org/10.18307/2023.0321">基于综合指标法的鄱阳湖生态系统健康评价</a>. 湖泊科学. 2023;35:1022–36.
+</div>
+<div id="ref-CaoXuFanEtAl2022JoLS_CH" class="csl-entry" role="listitem">
+4. 曹宇贤, 徐力刚, 范宏翔, 毛智宇, 程俊翔, 王殿常, et al. <a href="https://doi.org/10.18307/2022.0119">1960年以来气候变化与人类活动对鄱阳湖流域生态径流改变的影响</a>. 湖泊科学. 2022;34:232–46.
+</div>
+<div id="ref-LiDingFanEtAl2025JoLS_CH" class="csl-entry" role="listitem">
+5. 李楷文, 丁梦瑶, 范宏翔, 吴华武, 雷蕊宇, 付丛生, et al. 基于氢氧稳定同位素的鄱阳湖流域<span>“五河”</span>新水比例及其滞留时间量化研究. 湖泊科学. 2025;37:1–13.
+</div>
+<div id="ref-WangLeiFanEtAl2023TAaToEM_CH" class="csl-entry" role="listitem">
+6. 王辉, 雷蕊宇, 樊冬玲, 范宏翔. <a href="https://doi.org/10.19501/j.cnki.1006-2009.2023.06.012">基于MIKE21的骆马湖汛期总磷模拟及优化调控研究</a>. 环境监测管理与技术. 2023;35:65–70.
+</div>
+<div id="ref-HuangXuFanEtAl2018RoES_CH" class="csl-entry" role="listitem">
+7. 黄涛, 徐力刚, 范宏翔, 孟元可. <a href="https://doi.org/10.13198/j.issn.1001-6929.2018.05.22">长江流域干旱时空变化特征及演变趋势</a>. 环境科学研究. 2018;31:1677–84.
+</div>
+<div id="ref-ChenFanPengEtAl2025JoHNUSE_CH" class="csl-entry" role="listitem">
+8. 陈远, 范宏翔, 彭凯, 邓建明, 彭霁虹. <a href="https://doi.org/10.16366/j.cnki.1000-2367.2023.08.31.0002">基线选择对热浪事件计算方法的影响</a>. 河南师范大学学报(自然科学版). 2025;125–35.
+</div>
+<div id="ref-LuHuangXuEtAl2021TAaToEM_CH" class="csl-entry" role="listitem">
+9. 鲁照, 黄河清, 徐力刚, 范宏翔. <a href="https://doi.org/10.19501/j.cnki.1006-2009.2021.04.007">基于熵权的WQI法在鄱阳湖水质评价中的应用</a>. 环境监测管理与技术. 2021;33:30–4.
+</div>
+<div id="ref-FanHeXuEtAl2021JoLS_CH" class="csl-entry" role="listitem">
+10. 范宏翔, 何菡丹, 徐力刚, 张明睿, 姜加虎. <a href="https://doi.org/10.18307/2021.0319">基于长短记忆模型的鄱阳湖流域径流模拟及其演变的归因分析</a>. 湖泊科学. 2021;33:866–78.
+</div>
+<div id="ref-LiuTanFan2021YR_CH" class="csl-entry" role="listitem">
+11. 刘星根, 谭志强, 范宏翔. <a href="https://doi.org/10.16232/j.cnki.1001-4179.2021.05.011">赣江尾闾碟形湖水体季节性分布特征</a>. 人民长江. 2021;52:66–72.
+</div>
+<div id="ref-WangLiuHeEtAl2019TAaToEM_CH" class="csl-entry" role="listitem">
+12. 王霞, 刘雷, 何跃, 范宏翔. <a href="https://doi.org/10.19501/j.cnki.1006-2009.20190313.008">洪泽湖水体富营养化时空分布特征与影响因素分析</a>. 环境监测管理与技术. 2019;31:58–61.
+</div>
+<div id="ref-ZhangZhengXuEtAl2021TAaToEM_CH" class="csl-entry" role="listitem">
+13. 张明睿, 郑俊, 徐力刚, 范宏翔, 张德伟. <a href="https://doi.org/10.19501/j.cnki.1006-2009.2021.04.006">城市小流域面源污染输出特征及污染负荷分类核算研究</a>. 环境监测管理与技术. 2021;33:25–9.
+</div>
+<div id="ref-ChengXuJiangEtAl2016JoAS_CH" class="csl-entry" role="listitem">
+14. 程俊翔, 徐力刚, 姜加虎, 谭志强, 喻崎雯, 范宏翔. 洞庭湖流域径流量对气候变化和人类活动的响应研究. 农业环境科学学报. 2016;35:2146–53.
+</div>
+<div id="ref-DingJiangXuEtAl2024JoLS_CH" class="csl-entry" role="listitem">
+15. 丁艺鼎, 蒋名亮, 徐力刚, 范宏翔, 吕海深. 基于鲸鱼优化算法的长短期记忆模型水库洪水预报. 湖泊科学. 2024;36:320–32.
+</div>
+<div id="ref-DingFanXuEtAl2024JoLS_CH" class="csl-entry" role="listitem">
+16. 丁艺鼎, 范宏翔, 徐力刚, 蒋名亮, 吕海深, 朱永华, et al. 可解释性长短期记忆模型用于预测湖泊总磷浓度变化. 湖泊科学. 2024;36:1046–60.
+</div>
+<div id="ref-FanXuZhaoEtAl2015EaES_CH" class="csl-entry" role="listitem">
+17. 范宏翔, 徐力刚, 赵旭, 胡岳峰. <a href="https://doi.org/10.16258/j.cnki.1674-5906.2015.02.012">太湖流域典型稻-麦轮作农田区氮素流失过程研究</a>. 生态环境学报. 2015;24:255–62.
+</div>
+<div id="ref-DuXuZhangEtAl2019RoES_CH" class="csl-entry" role="listitem">
+18. 杜冰雪, 徐力刚, 张杰, 范宏翔, 程俊翔, 黄涛, et al. <a href="https://doi.org/10.13198/j.issn.1001-6929.2018.10.07">鄱阳湖富营养化时空变化特征及其与水位的关系</a>. 环境科学研究. 2019;32:795–801.
+</div>
+<div id="ref-FanXuZhuEtAl2021JoLS_CH" class="csl-entry" role="listitem">
+19. 范宏翔, 徐力刚, 朱华, 鲁照, 曹宇贤, 吴亚坤, et al. <a href="https://doi.org/10.18307/2021.0419">气候变化和人类活动对鄱阳湖水龄影响的定量区分</a>. 湖泊科学. 2021;33:1175–87.
+</div>
+<div id="ref-DuXuJiangEtAl2020WS_CH" class="csl-entry" role="listitem">
+20. 杜冰雪, 徐力刚, 蒋名亮, 程俊翔, 谭志强, 范宏翔. <a href="https://doi.org/10.13248/j.cnki.wetlandsci.2020.01.003">2000–2014年洞庭湖区植物面积变化及其与湖泊水位的关系</a>. 湿地科学. 2020;18:20–7.
+</div>
+<div id="ref-ChengXuFanEtAl2019RRaA" class="csl-entry" role="listitem">
+21. Cheng J, Xu L, Fan H, Jiang J. <a href="https://doi.org/10.1002/rra.3518">Changes in the flow regimes associated with climate change and human activities in the yangtze river</a>. River Research and Applications. 2019;35:1415–27.
+</div>
+<div id="ref-ChengXuFengEtAl2019W" class="csl-entry" role="listitem">
+22. Cheng J, Xu L, Feng W, Fan H, Jiang J. <a href="https://doi.org/10.3390/w11050917">Changes in water level regimes in china’s two largest freshwater lakes: Characterization and implication</a>. Water. 2019;11.
+</div>
+<div id="ref-FanJiangXuEtAl2020W" class="csl-entry" role="listitem">
+23. Fan H, Jiang M, Xu L, Zhu H, Cheng J, Jiang J. <a href="https://doi.org/10.3390/w12010175">Comparison of long short term memory networks and the hydrological model in runoff simulation</a>. Water. 2020;12.
+</div>
+<div id="ref-FanXuWangEtAl2019W" class="csl-entry" role="listitem">
+24. Fan H, Xu L, Wang X, Jiang J, Feng W, You H. <a href="https://doi.org/10.1007/s13157-017-0903-7">Relationship between vegetation community distribution patterns and environmental factors in typical wetlands of poyang lake, china</a>. Wetlands. 2017;39:75–87.
+</div>
+<div id="ref-FanXuWangEtAl2017WS" class="csl-entry" role="listitem">
+25. Fan H, Xu L, Wang X, Wu Y, Jiang J. <a href="https://doi.org/10.2166/ws.2017.224">Identify the influencing paths of precipitation and soil water storage on runoff: An example from xinjiang river basin, poyang lake, china</a>. Water Supply. 2017;18:1598–605.
+</div>
+<div id="ref-FanXuTaoEtAl2017W" class="csl-entry" role="listitem">
+26. Fan H, Xu L, Tao H, Feng W, Cheng J, You H. <a href="https://doi.org/10.3390/w9020135">Accessing the difference in the climate elasticity of runoff across the poyang lake basin, china</a>. Water. 2017;9.
+</div>
+<div id="ref-HuangXuFan2019W" class="csl-entry" role="listitem">
+27. Huang T, Xu L, Fan H. <a href="https://doi.org/10.3390/w11010013">Drought characteristics and its response to the global climate variability in the yangtze river basin, china</a>. Water. 2018;11.
+</div>
+<div id="ref-JiangXuChenEtAl2020S" class="csl-entry" role="listitem">
+28. Jiang M, Xu L, Chen X, Zhu H, Fan H. <a href="https://www.mdpi.com/2071-1050/12/21/9033">Soil quality assessment based on a minimum data set: A case study of a county in the typical river delta wetlands</a>. Sustainability. 2020;12:9033.
+</div>
+<div id="ref-LiSongBaoEtAl2022W" class="csl-entry" role="listitem">
+29. Li J, Song F, Bao Z, Fan H, Wu H. <a href="https://www.mdpi.com/2073-4441/14/3/506">Insights into shallow freshwater lakes hydrology in the yangtze floodplain from stable water isotope tracers</a>. Water. 2022;14:506.
+</div>
+<div id="ref-WuFanLeiEtAl2023JoH" class="csl-entry" role="listitem">
+30. Wu H, Fan H, Lei R, Sun C, Wang S, Wu H, et al. <a href="https://doi.org/10.1016/j.jhydrol.2023.129835">Atmospheric processes control the stable isotopic variability of precipitation in the middle–lower reaches of the yangtze river basin, east asian monsoon region</a>. Journal of Hydrology. 2023;623:129835.
+</div>
+<div id="ref-XuFanOliverEtAl2022ER" class="csl-entry" role="listitem">
+31. Xu G, Fan H, Oliver DM, Dai Y, Li H, Shi Y, et al. <a href="https://doi.org/10.1016/j.envres.2022.113843">Decoding river pollution trends and their landscape determinants in an ecologically fragile karst basin using a machine learning model</a>. Environmental Research. 2022;214:113843.
+</div>
+<div id="ref-YouFanXuEtAl2019W" class="csl-entry" role="listitem">
+32. You H, Fan H, Xu L, Wu Y, Liu L, Yao Z. <a href="https://doi.org/10.3390/w11040825">Poyang lake wetland ecosystem health assessment of using the wetland landscape classification characteristics</a>. Water. 2019;11.
+</div>
+<div id="ref-YouFanXuEtAl2017W" class="csl-entry" role="listitem">
+33. You H, Fan H, Xu L, Wu Y, Wang X, Liu L, et al. <a href="https://doi.org/10.3390/w9070467">Effects of water regime on spring wetland landscape evolution in poyang lake between 2000 and 2010</a>. Water. 2017;9.
+</div>
+<div id="ref-ZhuXuJiangEtAl2019W" class="csl-entry" role="listitem">
+34. Zhu H, Xu L, Jiang J, Fan H. <a href="https://doi.org/10.3390/w11081705">Spatiotemporal variations of summer precipitation and their correlations with the east asian summer monsoon in the poyang lake basin, china</a>. Water. 2019;11.
+</div>
+<div id="ref-XuFanLuoEtAl2023W" class="csl-entry" role="listitem">
+35. Xu J, Fan H, Luo M, Li P, Jeong T, Xu L. <a href="https://doi.org/10.3390/w15030576">Transformer based water level prediction in poyang lake, china</a>. Water. 2023;15.
+</div>
+<div id="ref-FanSongWuEtAl2024JoHRS" class="csl-entry" role="listitem">
+36. Fan H, Song F, Wu H, Du Y, Lei R, Ding M, et al. <a href="https://doi.org/10.1016/j.ejrh.2024.102049">Identifying the pattern of shallow groundwater hydrochemistry and its driving factors in a typical estuarine delta of poyang lake watershed, china: Insights into water quality assessment</a>. Journal of Hydrology: Regional Studies. 2024;56:102049.
+</div>
+<div id="ref-XiongLiFanEtAl2024SoTTE" class="csl-entry" role="listitem">
+37. Xiong C, Li H, Fan H, Askar A. <a href="https://doi.org/10.1016/j.scitotenv.2024.173240">Historical development, impact mechanism and future trends of nitrogen footprint in wuxi city, china</a>. Science of The Total Environment. 2024;934:173240.
+</div>
+<div id="ref-LiYuanSunEtAl2024JoHRS" class="csl-entry" role="listitem">
+38. Li X, Yuan C, Sun T, Fan H. <a href="https://doi.org/10.1016/j.ejrh.2024.101912">Identifying the spatiotemporal patterns of drought-flood alternation based on IMERG product in the humid subtropical poyang lake basin, china</a>. Journal of Hydrology: Regional Studies. 2024;54:101912.
+</div>
+<div id="ref-LiuHeZhouEtAl2024EI" class="csl-entry" role="listitem">
+39. Liu Y, He H, Zhou J, Fan H, Wu Q, Delang CO. <a href="https://doi.org/10.1016/j.ecolind.2024.112202">Understanding thermal stratification and circulation dynamics in fuxian lake: Insights from EFDC simulation study</a>. Ecological Indicators. 2024;165:112202.
+</div>
+<div id="ref-WuFanLiEtAl2024JoH" class="csl-entry" role="listitem">
+40. Wu H, Fan H, Li J, Yue F-J, Lian E, Fu C, et al. <a href="https://doi.org/10.1016/j.jhydrol.2024.131565">Reproducing surface water isoscapes of <span class="math inline">\(\delta^{18}\)</span>o and <span class="math inline">\(\delta^2\)</span>h across china: A machine learning approach</a>. Journal of Hydrology. 2024;638:131565.
+</div>
+<div id="ref-XuYuanLiEtAl2023HR" class="csl-entry" role="listitem">
+41. Xu C, Yuan C, Li X, Lin Y, Fan H. <a href="https://doi.org/10.2166/nh.2023.141">Projection of disaster-causing risk of extreme precipitation in the yangtze river basin based on CMIP6</a>. Hydrology Research. 2023;54:401–17.
+</div>
+<div id="ref-ChengXuWangEtAl2023E&amp;H" class="csl-entry" role="listitem">
+42. Cheng J, Xu L, Wang R, You H, Fan H, Wu Y. <a href="https://doi.org/10.1016/j.ecohyd.2023.09.004">Comprehensive evaluation of environmental flows in the yangtze river regulated by two large dams</a>. Ecohydrology &amp; Hydrobiology. 2024;24.
+</div>
+<div id="ref-LeiGaoWeiEtAl2021PaCotEPA" class="csl-entry" role="listitem">
+43. Lei X, Gao L, Wei J, Ma M, Xu L, Fan H, et al. <a href="https://doi.org/10.1016/j.pce.2021.103019">Contributions of climate change and human activities to runoff variations in the poyang lake basin of china</a>. Physics and Chemistry of the Earth, Parts A/B/C. 2021;123:103019.
+</div>
+<div id="ref-FanChengXieEtAl2024SoTTE" class="csl-entry" role="listitem">
+44. Fan L, Cheng J, Xie Y, Xu L, Buttler A, Wu Y, et al. <a href="https://doi.org/10.1016/j.scitotenv.2024.170689">Spatio-temporal patterns and drivers of CH<span class="math inline">\(_4\)</span> and CO<span class="math inline">\(_2\)</span> fluxes from rivers and lakes in highly urbanized areas</a>. Science of The Total Environment. 2024;918:170689.
+</div>
+</section>
 </div>
 
 
 
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -212,6 +419,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -662,7 +876,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">
 <p>Powered by <a href="https://quarto.org"><iconify-icon role="img" inline="" icon="simple-icons:quarto" aria-label="Icon quarto from simple-icons Iconify.design set." title="Icon quarto from simple-icons Iconify.design set."></iconify-icon> Quarto</a>.</p>
 </div>   
@@ -673,7 +888,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p>License: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY NC SA 4.0</a>.</p>
 </div>
   </div>
-</footer><script type="text/javascript">
+</footer>
+<script type="text/javascript">
   const dateElements = document.querySelectorAll("p.date, div.listing-date, div.listing-file-modified");
   dateElements.forEach((el) => {
     el.innerHTML = el.innerHTML.replace(
@@ -681,40 +897,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       "$1<sup style='font-size:0.5em;font-style:italic;'>$2</sup>"
     );
   });
-</script><script>
+</script>
+<script>
   document.getElementById('current-year').textContent = new Date().getFullYear();
-</script><script>var lightboxQuarto = GLightbox({"loop":false,"selector":".lightbox","openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
+</script>
+
+
 
 
 </body></html>

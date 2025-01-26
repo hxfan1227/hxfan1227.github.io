@@ -61,5 +61,54 @@
     "title": "Frank (Hongxiang) Fan",
     "section": "Publication Counts by Year",
     "text": "Publication Counts by Year"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "hxfan@niglas.ac.cn"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Curriculum Vitae",
+    "section": "EDUCATION",
+    "text": "EDUCATION\nPh.D. in Physical Ggeography  University of Chinese Academy of Sciences Sep 2016 — Jul 2019\nM.Sc. in Physical Geography  University of Chinese Academy of Sciences Sep 2013 — Jul 2016\nB.Sc. in Enviromental Engineering  Huazhong Agriclutural University Sep 2009 — Jul 2013"
+  },
+  {
+    "objectID": "cv.html#work-experience",
+    "href": "cv.html#work-experience",
+    "title": "Curriculum Vitae",
+    "section": "WORK EXPERIENCE",
+    "text": "WORK EXPERIENCE\n\nHonorary visiting scholar\nFlinders University, South Australia Jan 2024 – Present\nWork with Prof. Adrian Werner on surface-groundwater interaction related projects.\n\nFocus on coastal hydrology and surface-groundwater interactions.\nSubmarine Freshwater Groundwater Discharge (SFGD).\n\n\n\nResearch assistant\nNanjing Institute of Geography and Limnology, Chinese Academy of Sciences Jul 2019 – Present\n\nBuilt a fully coupled model for surface-groundwater interaction in floodplain wetlands.\nDeveloped a new algorithm for evaluating surface hydrological connectivity with parallel computing technique.\nExplored how convective behaviors and moisture sources determine the variability of precipitation stable isotope\nDeveloped a random forest model to predict river isotopes across China at the catchment scale."
+  },
+  {
+    "objectID": "cv.html#presentations-and-workshops",
+    "href": "cv.html#presentations-and-workshops",
+    "title": "Curriculum Vitae",
+    "section": "PRESENTATIONS AND WORKSHOPS",
+    "text": "PRESENTATIONS AND WORKSHOPS\n\nTalk: Misadventures with Reproducibility in R (30 Nov 2022, R Ladies Melbourne Meetup)\nTalk: Designing R Packages (4 Oct 2022, Monash EBS Data Science Research Software Study Group)\nTalk: Quarto Websites as Research Compendiums (16 Aug 2022, Monash EBS Data Science Research Software Study Group)\nWorkshop: Writing academic papers with Rmarkdown and friends (9 Aug 2022, Monash University)"
+  },
+  {
+    "objectID": "cv.html#references",
+    "href": "cv.html#references",
+    "title": "Curriculum Vitae",
+    "section": "References",
+    "text": "References\nAvailable upon request"
+  },
+  {
+    "objectID": "cv.html#research-experience",
+    "href": "cv.html#research-experience",
+    "title": "Curriculum Vitae",
+    "section": "RESEARCH EXPERIENCE",
+    "text": "RESEARCH EXPERIENCE\n\nHonorary visiting scholar\nFlinders University, South Australia Jan 2024 – Present\nWork with Prof. Adrian Werner on surface-groundwater interaction related projects.\n\nFocus on coastal hydrology and surface-groundwater interactions.\nSubmarine Freshwater Groundwater Discharge (SFGD).\n\n\n\nResearch assistant\nNanjing Institute of Geography and Limnology, Chinese Academy of Sciences Jul 2019 – Present\n\nBuilt a fully coupled model for surface-groundwater interaction in floodplain wetlands.\nDeveloped a new algorithm for evaluating surface hydrological connectivity with parallel computing technique.\nExplored how convective behaviors and moisture sources determine the variability of precipitation stable isotope\nDeveloped a random forest model to predict river isotopes across China at the catchment scale.\n\n\n\nPh.D. Candidate\nUniversity of Chinese Academy of Science Sep 2016 – Jul 2019\n\nBuilt a 2D water environment model for Poyang Lake in China and coupled it with a runoff prediction model.\nAttributed the relative contributions of climate change and anthropogenic activities on the water environment."
+  },
+  {
+    "objectID": "cv.html#publications",
+    "href": "cv.html#publications",
+    "title": "Curriculum Vitae",
+    "section": "Publications",
+    "text": "Publications\n\n1. 孟元可, 叶许春, 徐力刚, 徐昔保, 范宏翔, 黄涛. 2000–2015年鄱阳湖区植被净初级生产力变化及驱动因素分析. 湿地科学. 2018;16:360–9.\n\n\n2. 冯文娟, 徐力刚, 范宏翔, 李新艳, 董磊. 梅西湖与鄱阳湖水位变化关系及其水量交换过程分析. 陕西师范大学学报(自然科学版). 2015;43:83–8.\n\n\n3. 毛智宇, 徐力刚, 赖锡军, 王晓龙, 李云良, 李相虎, et al. 基于综合指标法的鄱阳湖生态系统健康评价. 湖泊科学. 2023;35:1022–36.\n\n\n4. 曹宇贤, 徐力刚, 范宏翔, 毛智宇, 程俊翔, 王殿常, et al. 1960年以来气候变化与人类活动对鄱阳湖流域生态径流改变的影响. 湖泊科学. 2022;34:232–46.\n\n\n5. 李楷文, 丁梦瑶, 范宏翔, 吴华武, 雷蕊宇, 付丛生, et al. 基于氢氧稳定同位素的鄱阳湖流域“五河”新水比例及其滞留时间量化研究. 湖泊科学. 2025;37:1–13.\n\n\n6. 王辉, 雷蕊宇, 樊冬玲, 范宏翔. 基于MIKE21的骆马湖汛期总磷模拟及优化调控研究. 环境监测管理与技术. 2023;35:65–70.\n\n\n7. 黄涛, 徐力刚, 范宏翔, 孟元可. 长江流域干旱时空变化特征及演变趋势. 环境科学研究. 2018;31:1677–84.\n\n\n8. 陈远, 范宏翔, 彭凯, 邓建明, 彭霁虹. 基线选择对热浪事件计算方法的影响. 河南师范大学学报(自然科学版). 2025;125–35.\n\n\n9. 鲁照, 黄河清, 徐力刚, 范宏翔. 基于熵权的WQI法在鄱阳湖水质评价中的应用. 环境监测管理与技术. 2021;33:30–4.\n\n\n10. 范宏翔, 何菡丹, 徐力刚, 张明睿, 姜加虎. 基于长短记忆模型的鄱阳湖流域径流模拟及其演变的归因分析. 湖泊科学. 2021;33:866–78.\n\n\n11. 刘星根, 谭志强, 范宏翔. 赣江尾闾碟形湖水体季节性分布特征. 人民长江. 2021;52:66–72.\n\n\n12. 王霞, 刘雷, 何跃, 范宏翔. 洪泽湖水体富营养化时空分布特征与影响因素分析. 环境监测管理与技术. 2019;31:58–61.\n\n\n13. 张明睿, 郑俊, 徐力刚, 范宏翔, 张德伟. 城市小流域面源污染输出特征及污染负荷分类核算研究. 环境监测管理与技术. 2021;33:25–9.\n\n\n14. 程俊翔, 徐力刚, 姜加虎, 谭志强, 喻崎雯, 范宏翔. 洞庭湖流域径流量对气候变化和人类活动的响应研究. 农业环境科学学报. 2016;35:2146–53.\n\n\n15. 丁艺鼎, 蒋名亮, 徐力刚, 范宏翔, 吕海深. 基于鲸鱼优化算法的长短期记忆模型水库洪水预报. 湖泊科学. 2024;36:320–32.\n\n\n16. 丁艺鼎, 范宏翔, 徐力刚, 蒋名亮, 吕海深, 朱永华, et al. 可解释性长短期记忆模型用于预测湖泊总磷浓度变化. 湖泊科学. 2024;36:1046–60.\n\n\n17. 范宏翔, 徐力刚, 赵旭, 胡岳峰. 太湖流域典型稻-麦轮作农田区氮素流失过程研究. 生态环境学报. 2015;24:255–62.\n\n\n18. 杜冰雪, 徐力刚, 张杰, 范宏翔, 程俊翔, 黄涛, et al. 鄱阳湖富营养化时空变化特征及其与水位的关系. 环境科学研究. 2019;32:795–801.\n\n\n19. 范宏翔, 徐力刚, 朱华, 鲁照, 曹宇贤, 吴亚坤, et al. 气候变化和人类活动对鄱阳湖水龄影响的定量区分. 湖泊科学. 2021;33:1175–87.\n\n\n20. 杜冰雪, 徐力刚, 蒋名亮, 程俊翔, 谭志强, 范宏翔. 2000–2014年洞庭湖区植物面积变化及其与湖泊水位的关系. 湿地科学. 2020;18:20–7.\n\n\n21. Cheng J, Xu L, Fan H, Jiang J. Changes in the flow regimes associated with climate change and human activities in the yangtze river. River Research and Applications. 2019;35:1415–27.\n\n\n22. Cheng J, Xu L, Feng W, Fan H, Jiang J. Changes in water level regimes in china’s two largest freshwater lakes: Characterization and implication. Water. 2019;11.\n\n\n23. Fan H, Jiang M, Xu L, Zhu H, Cheng J, Jiang J. Comparison of long short term memory networks and the hydrological model in runoff simulation. Water. 2020;12.\n\n\n24. Fan H, Xu L, Wang X, Jiang J, Feng W, You H. Relationship between vegetation community distribution patterns and environmental factors in typical wetlands of poyang lake, china. Wetlands. 2017;39:75–87.\n\n\n25. Fan H, Xu L, Wang X, Wu Y, Jiang J. Identify the influencing paths of precipitation and soil water storage on runoff: An example from xinjiang river basin, poyang lake, china. Water Supply. 2017;18:1598–605.\n\n\n26. Fan H, Xu L, Tao H, Feng W, Cheng J, You H. Accessing the difference in the climate elasticity of runoff across the poyang lake basin, china. Water. 2017;9.\n\n\n27. Huang T, Xu L, Fan H. Drought characteristics and its response to the global climate variability in the yangtze river basin, china. Water. 2018;11.\n\n\n28. Jiang M, Xu L, Chen X, Zhu H, Fan H. Soil quality assessment based on a minimum data set: A case study of a county in the typical river delta wetlands. Sustainability. 2020;12:9033.\n\n\n29. Li J, Song F, Bao Z, Fan H, Wu H. Insights into shallow freshwater lakes hydrology in the yangtze floodplain from stable water isotope tracers. Water. 2022;14:506.\n\n\n30. Wu H, Fan H, Lei R, Sun C, Wang S, Wu H, et al. Atmospheric processes control the stable isotopic variability of precipitation in the middle–lower reaches of the yangtze river basin, east asian monsoon region. Journal of Hydrology. 2023;623:129835.\n\n\n31. Xu G, Fan H, Oliver DM, Dai Y, Li H, Shi Y, et al. Decoding river pollution trends and their landscape determinants in an ecologically fragile karst basin using a machine learning model. Environmental Research. 2022;214:113843.\n\n\n32. You H, Fan H, Xu L, Wu Y, Liu L, Yao Z. Poyang lake wetland ecosystem health assessment of using the wetland landscape classification characteristics. Water. 2019;11.\n\n\n33. You H, Fan H, Xu L, Wu Y, Wang X, Liu L, et al. Effects of water regime on spring wetland landscape evolution in poyang lake between 2000 and 2010. Water. 2017;9.\n\n\n34. Zhu H, Xu L, Jiang J, Fan H. Spatiotemporal variations of summer precipitation and their correlations with the east asian summer monsoon in the poyang lake basin, china. Water. 2019;11.\n\n\n35. Xu J, Fan H, Luo M, Li P, Jeong T, Xu L. Transformer based water level prediction in poyang lake, china. Water. 2023;15.\n\n\n36. Fan H, Song F, Wu H, Du Y, Lei R, Ding M, et al. Identifying the pattern of shallow groundwater hydrochemistry and its driving factors in a typical estuarine delta of poyang lake watershed, china: Insights into water quality assessment. Journal of Hydrology: Regional Studies. 2024;56:102049.\n\n\n37. Xiong C, Li H, Fan H, Askar A. Historical development, impact mechanism and future trends of nitrogen footprint in wuxi city, china. Science of The Total Environment. 2024;934:173240.\n\n\n38. Li X, Yuan C, Sun T, Fan H. Identifying the spatiotemporal patterns of drought-flood alternation based on IMERG product in the humid subtropical poyang lake basin, china. Journal of Hydrology: Regional Studies. 2024;54:101912.\n\n\n39. Liu Y, He H, Zhou J, Fan H, Wu Q, Delang CO. Understanding thermal stratification and circulation dynamics in fuxian lake: Insights from EFDC simulation study. Ecological Indicators. 2024;165:112202.\n\n\n40. Wu H, Fan H, Li J, Yue F-J, Lian E, Fu C, et al. Reproducing surface water isoscapes of \\(\\delta^{18}\\)o and \\(\\delta^2\\)h across china: A machine learning approach. Journal of Hydrology. 2024;638:131565.\n\n\n41. Xu C, Yuan C, Li X, Lin Y, Fan H. Projection of disaster-causing risk of extreme precipitation in the yangtze river basin based on CMIP6. Hydrology Research. 2023;54:401–17.\n\n\n42. Cheng J, Xu L, Wang R, You H, Fan H, Wu Y. Comprehensive evaluation of environmental flows in the yangtze river regulated by two large dams. Ecohydrology & Hydrobiology. 2024;24.\n\n\n43. Lei X, Gao L, Wei J, Ma M, Xu L, Fan H, et al. Contributions of climate change and human activities to runoff variations in the poyang lake basin of china. Physics and Chemistry of the Earth, Parts A/B/C. 2021;123:103019.\n\n\n44. Fan L, Cheng J, Xie Y, Xu L, Buttler A, Wu Y, et al. Spatio-temporal patterns and drivers of CH\\(_4\\) and CO\\(_2\\) fluxes from rivers and lakes in highly urbanized areas. Science of The Total Environment. 2024;918:170689."
   }
 ]
