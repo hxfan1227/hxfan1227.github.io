@@ -1,7 +1,7 @@
 ---
 title: "Frank (Hongxiang) Fan"
 subtitle: |
-  Data analysist, numerical modeller, hydrogeologist, and assistant professor
+  Data analysist, numerical modeller, hydrogeologist, and research assitant
 image: assets/images/social-profile.png
 about:
   id: edu-exp
@@ -30,7 +30,7 @@ about:
       aria-label: "LinkedIn logo linking to hongxiang fan account"
     - text: "{{< iconify octicon:mark-github-16 >}}"
       href: "https://github.com/hxfan1227"
-      aria-label: "GitHub logo linking to mcanouil account"
+      aria-label: "GitHub logo linking to hxfan1227 account"
     # - text: "{{< iconify octicon:heart-fill-16 >}} Sponsor"
     #   href: "https://github.com/sponsors/mcanouil?o=esb"
     #   aria-label: "GitHub Sponsor mcanouil"
@@ -56,20 +56,34 @@ Have a look at my complete [_{{< iconify fa6-regular file-lines >}} curriculum v
 </div>
 :::
 
-
+```{r, fig.showtext = TRUE, out.width='100%', fig.height=2, dev='svg'}
+#| echo: false
+suppressMessages(library(tidyverse))
+showtext::showtext_auto()
+thematic::thematic_on(bg = "#222222", fg = "white", accent = "#0CE3AC", font = "Oxanium")
+data <- read.csv('publications.csv') %>% 
+  mutate(date = ymd(paste(Var1, '-01-01')))
+ggplot(data, aes(x = date, y = as.integer(Freq))) +
+  geom_bar(stat = 'identity', position = position_dodge(), width = 200) +
+  geom_line(aes(y = cumsum(Freq) / 5) ) +
+  # geom_text(aes(label = Freq), vjust = -0.5) +
+  labs(x = 'Year',y = 'Publications per year') +
+  scale_y_continuous(breaks = scales::pretty_breaks(5), sec.axis = sec_axis(name = 'Publications in total', ~.x * 5)) +
+  scale_x_date(breaks = scales::pretty_breaks(5))
+```
 
 :::: {.grid}
 
 ::: {.g-col-12 .g-col-md-8 style="text-align: left;"}
 ## Education
 
-- **_Ph.D._ in Physical Ggeography**, **2016**  
+- **_Ph.D._ in Physical Ggeography**, **2019**  
   *University Chinese Academy of Sciences, Beijing, China*
 
-- **_M.Sc._ in Physical Geography**, **2013**  
+- **_M.Sc._ in Physical Geography**, **2016**  
   *University Chinese Academy of Sciences, Beijing, China*
 
-- **_B.Sc._ in Enviromental Engineering**, **2009**  
+- **_B.Sc._ in Enviromental Engineering**, **2013**  
   *Huazhong Agriclutural University, Wuhan, China*
 :::
 
