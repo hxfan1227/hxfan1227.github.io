@@ -1,4 +1,7 @@
-create_pub_listing <- function(bib_file, author = "Fan") {
+library(downlit)
+library(xml2)
+
+create_pub_listing <- function(bib_file, author = "Hongxiang", author_zh = '范宏翔') {
   bib <- strsplit(paste(readLines(bib_file), collapse = "\n"), "\n@")[[1]]
   articles <- lapply(
     X = paste0("@", bib[bib != ""]),
@@ -16,13 +19,26 @@ create_pub_listing <- function(bib_file, author = "Fan") {
         ),
         -3
       )
-      authors <- sub(".*- family: ", "", grep("- family:", article, value = TRUE))
-      if (isTRUE(grepl("firstauthor", grep("keyword:", article, value = TRUE)))) {
-        first <- "  first: '*As first or corresponding*'"
+      # authors <- sub(".*- family: ", "", grep("- family:", article, value = TRUE))
+      
+      if (grepl("chinese", grep("keyword:", article, value = TRUE))) {
+        authors <- sub(".*- family: ", "", grep("- family:", article, value = TRUE))
+        if (grepl("firstauthor", grep("keyword:", article, value = TRUE))) {
+          first <- "  first: '*As first or corresponding*'"
+        } else {
+          first <- sprintf("  first: '%s'", paste(rep("&emsp;", 3), collapse = ""))
+        }
+        position <- sprintf("  position: '%s/%s'", grep(author_zh, authors), length(authors))
       } else {
-        first <- sprintf("  first: '%s'", paste(rep("&emsp;", 3), collapse = ""))
+        authors <- sub(".*given: ", "", grep("given:", article, value = TRUE))
+        if (grepl("firstauthor", grep("keyword:", article, value = TRUE))) {
+          first <- "  first: '*As first or corresponding*'"
+        } else {
+          first <- sprintf("  first: '%s'", paste(rep("&emsp;", 3), collapse = ""))
+        }
+        position <- sprintf("  position: '%s/%s'", grep(author, authors), length(authors))
       }
-      position <- sprintf("  position: '%s/%s'", grep(author, authors), length(authors))
+      
       article <- c(
         article,
         sub("  container-title: (.*)", "  journal-title: '*\\1*'", grep("  container-title:", article, value = TRUE)),
@@ -36,6 +52,13 @@ create_pub_listing <- function(bib_file, author = "Fan") {
   )
   writeLines(text = unlist(articles), con = sub("\\.bib$", ".yml", bib_file))
   
+  write.csv(data.frame(
+    table(
+      sapply(articles, 
+             function(x) sub("-.*", "", sub("  issued: ", "", grep("  issued:", x, value = TRUE)))))
+  ),
+  sub("\\.bib$", ".csv", bib_file), quote = F, row.names = F
+  )
   
   yaml_text <- c(
     "---",
