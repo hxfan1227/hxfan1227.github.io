@@ -10,7 +10,13 @@ css: assets/stylesheets/cv.css
 bibliography: publications.bib
 csl: assets/biomed-central.csl
 format-links: [pdf]
+image: assets/images/social-profile.png
+about:
+  template: solana
+  image-width: 9em
+  image-shape: round
 ---
+
 
 ::: {.print-only .contact-block}
 hxfan@niglas.ac.cn
