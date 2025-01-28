@@ -43,6 +43,7 @@ jobs:
             any::downlit
             any::xml2
             any::webshot2
+            any::showtext
 
 
       - name: Set Quarto Version
