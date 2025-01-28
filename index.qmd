@@ -51,7 +51,7 @@ Additionally, I am also a __*Honorary visiting scholar*__, working with Prof. [A
 
 I have developed a few {{< iconify fa6-brands:r-project >}}&nbsp;packages (_e.g._,&nbsp;[SGDr](https://hxfan1227.github.io/SGDr), [efdcr](https://hxfan1227.github.io/efdcr/)), and although most of them are personal use solely, hopefully some will be helpful.
 
-Have a look at my complete [_{{< iconify fa6-regular file-lines >}} curriculum vitae_](fhx_resume.pdf).
+Have a look at my complete [_{{< iconify fa6-regular file-lines >}} curriculum vitae_](https://hxfan1227.github.io/curriculum-vitae/).
 
 </div>
 :::
