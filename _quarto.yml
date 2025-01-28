@@ -2,7 +2,6 @@ project:
   type: website
   pre-render:
     - publications.r
-  output-dir: "docs"
   resources:
     - _headers
 website:
