@@ -81,6 +81,6 @@ lightbox: auto
 editor: source
 
 execute:
-  freeze: true
+  freeze: auto
 
 
