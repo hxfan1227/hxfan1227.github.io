@@ -1,9 +1,5 @@
 [
   {
-    "listing": "/projects.html",
-    "items": []
-  },
-  {
     "listing": "/blog.html",
     "items": [
       "/posts/welcome/index.html"
@@ -11,6 +7,10 @@
   },
   {
     "listing": "/publications.html",
+    "items": []
+  },
+  {
+    "listing": "/projects.html",
     "items": []
   }
 ]
