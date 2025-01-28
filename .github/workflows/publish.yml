@@ -30,6 +30,9 @@ jobs:
             libfreetype6-dev \
             libtiff5-dev
       
+      - name: Set up pandoc
+        uses: r-lib/actions/setup-pandoc@v2
+      
       - name: Install R
         uses: r-lib/actions/setup-r@v2
       
