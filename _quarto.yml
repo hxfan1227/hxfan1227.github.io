@@ -30,8 +30,8 @@ website:
         href: index.qmd
       - text: Blog
         href: blog.qmd
-      - text: CV
-        href: cv.qmd
+      # - text: CV
+      #   href: cv.qmd
       # - text: Projects
         # href: projects.qmd
       # - text: Talks

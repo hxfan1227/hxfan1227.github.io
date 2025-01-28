@@ -3,13 +3,13 @@ title: "Curriculum Vitae"
 format:
   html:
     toc: true
-  pdf:
-    author: Hongxiang Fan
-    pdf-engine: weasyprint
+  # pdf:
+  #   author: Hongxiang Fan
+  #   # pdf-engine: weasyprint
 css: assets/stylesheets/cv.css
 bibliography: publications.bib
 csl: assets/biomed-central.csl
-format-links: [pdf]
+# format-links: [pdf]
 image: assets/images/social-profile.png
 about:
   template: solana
