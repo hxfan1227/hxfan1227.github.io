@@ -1,6 +1,5 @@
 project:
   type: website
-  output-dir: docs
   pre-render:
     - publications.r
   resources:

@@ -47,3 +47,5 @@ po/*~
 rsconnect/
 
 /.quarto/
+/_site/
+
