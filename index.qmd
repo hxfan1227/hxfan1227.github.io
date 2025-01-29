@@ -26,7 +26,7 @@ about:
     #   href: "https://x.com/MickaelCanouil"
     #   aria-label: "X (Twitter) logo linking to MickaelCanouil account"
     - text: "{{< iconify fa6-brands:linkedin >}}"
-      href: "https://www.linkedin.com/in/hongxiang-fan-aa13bb90/"
+      href: "https://www.linkedin.com/in/hongxiang-fan/"
       aria-label: "LinkedIn logo linking to hongxiang fan account"
     - text: "{{< iconify octicon:mark-github-16 >}}"
       href: "https://github.com/hxfan1227"
