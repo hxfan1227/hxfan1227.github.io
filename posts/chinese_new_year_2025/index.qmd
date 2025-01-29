@@ -1,0 +1,22 @@
+---
+title: "Happy Chinese New Year 2025!"
+description: |
+  Year of the Snake
+date: "2025-01-29"
+date-modified: last-modified
+categories: [News]
+image: chinese-new-year-2025-year-snake.jpg
+image-alt: |
+  Chinese New Year: 2025 -- Year of the Snake 
+toc-depth: 5
+---
+
+![](chinese-new-year-2025-year-snake.jpg){width=100%, fig-align="center"}
+
+
+This year, the festivities begin on Wednesday, Jan. 29, 2025, marking the arrival of the Year of the Snake 🐍, according to the Chinese zodiac. 
+The Chinese zodiac follows a 12-year cycle, with each year associated with a specific animal. 
+The 12 animals in this cycle are: *Rat* 🐀, *Ox* 🐂, *Tiger* 🐅, *Rabbit* 🐇, *Dragon* 🐉, *Snake* 🐍, *Horse* 🐎, *Goat* 🐐, *Monkey* 🐒, *Rooster* 🐓, *Dog* 🐕, and *Pig* 🐖.
+The Snake 🐍 is the sixth animal in the cycle, following the Dragon 🐉, which is considered the most auspicious of all zodiac signs. Because of this, the Year of the Snake is sometimes referred to as the "Little Dragon Year."
+
+See also [All you need to know about Year of the Snake](https://multimedia.scmp.com/infographics/news/china/article/3295411/year-of-snake-2025/index.html)
