@@ -1,0 +1,155 @@
+---
+title: "Notes on SCS-CN in SWAT"
+description: |
+    The Soil Conservation Service Curve Number (SCS-CN) method is popular for predicting surface runoff due to its simplicity, ease of
+    application, and widespread acceptance. 
+date: "2025-01-29"
+date-modified: last-modified
+categories: [research, notes]
+bibliography: refs.bib
+toc-depth: 5
+format:
+  html:
+    mermaid:
+      theme: dark
+---
+
+# SCS-CN method
+
+The Soil Conservation Service Curve Number [SCS-CN, see @united1972scs] method is popular for predicting surface runoff due to its simplicity, ease of application, and widespread acceptance [@Sreejith2024]. 
+The SCS method estimates *direct runoff*, but the proportions of surface runoff and subsurface flow (channel runoff is ignored) can be appraised by means of the runoff curve number (CN), which is another indicator of the probability of flow types: the larger the CN the more likely that the estimate is of surface runoff [@united1972scs]. 
+The rainfall-runoff relation was developed ignoring the rainfall intensity [@united1972scs].
+
+::: {.column-margin}
+The principal application of the method is in estimating quantities of runoff in flood hydrographs or in relation to flood peak rates.
+These quantities consist of one or more types of runoff:
+
+- Channel runoff: occurs when rain falls on a flowing stream or on the impervious surfaces of a streamflow-measuring installation.
+
+- Surface runoff: occurs only when the rainfall rate is greater than the infiltration rate (after the initial demands of interception, infiltration, and surface storage have been satisfied).
+
+- Subsurface flow: occurs when infiltrated rainfall meets an underground zone of low transmission, travels above the zone to the
+soil surface downhill, and appears as a seep or spring (quick return flow).
+
+- Base flow: occurs when there is a fairly steady flow from natural.
+storage
+:::
+
+::: callout-important
+direct flow consists of channel flow, surface runoff and subsurface flow [@united1972scs].
+:::
+
+## $I_\text{a} = 0$
+
+If records of natural rainfall and runoff for a large storm over a small area are used, plotting of accumulated runoff versus accumulated rainfall will show that runoff starts after some rain accumulates (there is an *initial abstraction* \[$I_\text{a}$\] of rainfall) and that the double-mass line curves, becoming asymptotic to a straight line [@united1972scs]. 
+
+::: {.column-margin}
+The initial abstraction ($I_\text{a}$) consists mainly of interception, infiltration, and surface storage, all of which occur **before runoff begins** [@united1972scs].
+:::
+
+When $I_\text{a}$ is zero (i.e., rainfall and runoff begin simultaneously), the relation between rainfall, runoff, and retention (the rain not converted to runoff) at any point on the mass curve can be expressed as [@united1972scs]:
+
+$$
+\frac{F}{S}=\frac{Q}{P}
+$$ {#eq-rainall-runoff-retention}
+
+where $F$ is the actual retention after runoff begins, $S$ is the potential maximum retention after runoff begins, $Q$ is the actual runoff and $P$ is the rainfall.
+
+::: callout-note
+@eq-rainall-runoff-retention applies to on-site runoff; for large watersheds there is a **lag** in the appearance of the runoff at the stream gage, and the double mass curve produces a different relation. But if storm totals for $P$ and $Q$ are used, @eq-rainall-runoff-retention does apply even for large watersheds because the effects of the lag are removed [@united1972scs].
+:::
+
+$F$ is the difference between $P$ and $Q$ at any point on the mass curve, leading to:
+
+$$
+\frac{P-Q}{S} = \frac{Q}{P}
+$$ {#eq-rainall-runoff-retention2}
+
+Solving $Q$ produces the equation:
+
+$$
+Q = \frac{P^2}{P+S}
+$$ {#eq-Q}
+
+## $I_\text{a} \neq 0$
+
+If $I_\text{a} > 0$, the amount of available rainfall is $P - I_\text{a}$, leading to:
+
+$$
+\left\{
+\begin{aligned}
+\frac{F}{S}&=\frac{Q}{P - I_\text{a}}\\
+Q &= \frac{(Q-I_\text{a})^2}{(P-I_\text{a})+S} 
+\end{aligned}
+\right.
+$$ {#eq-rainall-runoff-retention-Ia}
+
+The relation between $I_\text{a}$ and $S$ (which includes $I_\text{a}$) was developed by means of rainfall and runoff data from experimental small watersheds as [@united1972scs]:
+
+
+$$
+I_\text{a} = 0.2S
+$$ {#eq-Ia-S}
+
+Substituting @eq-Ia-S in @eq-rainall-runoff-retention-Ia gives:
+
+$$
+Q = \frac{(P-0.2S)^2}{P+0.8S}
+$$ {#eq-SCS-direct-runoff}
+
+::: {.column-margin}
+@eq-SCS-direct-runoff is the rainfall-runoff relation used in the SCS method of estimating direct runoff from storm rainfall.
+:::
+
+##  $I_\text{a}$ and $S$
+
+The magnitudes of  $I_\text{a}$  were estimated by taking the accumulated rainfall from the beginning of a storm to the time when runoff started [@united1972scs].
+
+::: callout-important
+Errors in $I_\text{a}$ were due to one or more of the following [@united1972scs]:
+
+- difficulty of determining the time when rainfall began, because of storm travel and lack of instrumentation.
+
+- difficulty of determining the time when runoff began, owing to the effects of rain on the measuring installations (channel runoff) and to the lag of runoff from the watersheds.
+
+- impossibility of determining how much interception prior to runoff later made its way to the soil surface and contributed to runoff.
+:::
+
+
+
+# SCS-CN in SWAT
+
+```{mermaid}
+flowchart TB
+    subgraph main.f
+            A[main.f] --> B(initialization)
+            B --> C[simulate.f]
+            C --> D[command.f]
+            D --> E{End}
+            E --no-->C
+            E --yes-->F[postprocess]
+    end
+    subgraph command.f
+        D --> D1[subbasin.f]
+        D1 --> D2[initialization]
+        D2 --> D3[surface.f]
+        D3 --> D4(soil water routing)
+        D4 --> D5[...]
+    end
+    subgraph surface.f
+        D3 --> E2(canopy interception)
+        E2 --> E3(snow melt)
+        E3 --> E4(crack volume)
+        E4 --> E5(add overland flow)   
+        E5 --> E6(add irrigation)  
+        E6 --> E7(calculate daily CN)
+        E7 --> E8["volq.f (calculate runoff [surfq])"]
+        E8 --> E9("inflpcp = Max(0.,precipday - surfq(j) - lid_sto)")
+        E9 --> D4
+    end
+```
+
+# References
+
+::: {#refs}
+:::

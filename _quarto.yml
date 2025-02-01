@@ -79,6 +79,8 @@ lightbox: auto
 
 editor: source
 
+csl: assets/ref.csl
+
 execute:
   freeze: auto
 
