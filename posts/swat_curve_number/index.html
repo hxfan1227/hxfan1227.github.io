@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Frank (Hongxiang) Fan, Ph.D.">
+<meta name="description" content="The Soil Conservation Service Curve Number (SCS-CN) method is popular for predicting surface runoff due to its simplicity, ease of application, and widespread acceptance.">
 
-<title>Blog – Frank (Hongxiang) Fan</title>
+<title>Notes on SCS-CN in SWAT – Frank (Hongxiang) Fan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,30 +22,48 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f8dc6eab18fde03278982b0b35885446.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7390cc3e2804bb90d8aa95e21cf3e1ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
-<script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
-<link href="site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-f8dc6eab18fde03278982b0b35885446.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-7390cc3e2804bb90d8aa95e21cf3e1ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
+<link href="../../site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,35 +91,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-author','listing-reading-time','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
-      
-      searchColumns: ["listing-title","listing-date"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
+<meta name="mermaid-theme" content="dark">
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -140,10 +135,10 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/images/logo.svg" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/images/logo.svg" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Frank (Hongxiang) Fan</span>
     </a>
   </div>
@@ -154,15 +149,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
@@ -187,161 +182,233 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Blog</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Notes on SCS-CN in SWAT</h1>
+                  <div>
+        <div class="description">
+          <p>The Soil Conservation Service Curve Number (SCS-CN) method is popular for predicting surface runoff due to its simplicity, ease of application, and widespread acceptance.</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">research</div>
+                <div class="quarto-category">notes</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p><a href="hxfan1227.github.io">Frank (Hongxiang) Fan, <em>Ph.D.</em></a> <a href="https://orcid.org/0000-0001-7626-1344" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">Wednesday, the 29th of January, 2025</p>
+      </div>
+    </div>
     
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">Saturday, the 1st of February, 2025</p>
+      </div>
+    </div>
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TmV3cw==">News <span class="quarto-category-count">(2)</span></div><div class="category" data-category="bm90ZXM=">notes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cmVzZWFyY2g=">research <span class="quarto-category-count">(1)</span></div></div></div>
-<!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
-
-
-
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#scs-cn-method" id="toc-scs-cn-method" class="nav-link active" data-scroll-target="#scs-cn-method"><span class="header-section-number">1</span> SCS-CN method</a>
+  <ul>
+  <li><a href="#i_texta-0" id="toc-i_texta-0" class="nav-link" data-scroll-target="#i_texta-0"><span class="header-section-number">1.1</span> <span class="math inline">\(I_\text{a} = 0\)</span></a></li>
+  <li><a href="#i_texta-neq-0" id="toc-i_texta-neq-0" class="nav-link" data-scroll-target="#i_texta-neq-0"><span class="header-section-number">1.2</span> <span class="math inline">\(I_\text{a} \neq 0\)</span></a></li>
+  <li><a href="#i_texta-and-s" id="toc-i_texta-and-s" class="nav-link" data-scroll-target="#i_texta-and-s"><span class="header-section-number">1.3</span> <span class="math inline">\(I_\text{a}\)</span> and <span class="math inline">\(S\)</span></a></li>
+  </ul></li>
+  <li><a href="#scs-cn-in-swat" id="toc-scs-cn-in-swat" class="nav-link" data-scroll-target="#scs-cn-in-swat"><span class="header-section-number">2</span> SCS-CN in SWAT</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">3</span> References</a></li>
+  </ul>
+</nav>
     </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
+
+
+
+
+<section id="scs-cn-method" class="level1 page-columns page-full" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> SCS-CN method</h1>
+<p>The Soil Conservation Service Curve Number <span class="citation" data-cites="united1972scs">(SCS-CN, see <a href="#ref-united1972scs" role="doc-biblioref">SCS, 1972</a>)</span> method is popular for predicting surface runoff due to its simplicity, ease of application, and widespread acceptance <span class="citation" data-cites="Sreejith2024">(<a href="#ref-Sreejith2024" role="doc-biblioref">Sreejith et al., 2024</a>)</span>. The SCS method estimates <em>direct runoff</em>, but the proportions of surface runoff and subsurface flow (channel runoff is ignored) can be appraised by means of the runoff curve number (CN), which is another indicator of the probability of flow types: the larger the CN the more likely that the estimate is of surface runoff <span class="citation" data-cites="united1972scs">(<a href="#ref-united1972scs" role="doc-biblioref">SCS, 1972</a>)</span>. The rainfall-runoff relation was developed ignoring the rainfall intensity <span class="citation" data-cites="united1972scs">(<a href="#ref-united1972scs" role="doc-biblioref">SCS, 1972</a>)</span>.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>The principal application of the method is in estimating quantities of runoff in flood hydrographs or in relation to flood peak rates. These quantities consist of one or more types of runoff:</p>
+<ul>
+<li><p>Channel runoff: occurs when rain falls on a flowing stream or on the impervious surfaces of a streamflow-measuring installation.</p></li>
+<li><p>Surface runoff: occurs only when the rainfall rate is greater than the infiltration rate (after the initial demands of interception, infiltration, and surface storage have been satisfied).</p></li>
+<li><p>Subsurface flow: occurs when infiltrated rainfall meets an underground zone of low transmission, travels above the zone to the soil surface downhill, and appears as a seep or spring (quick return flow).</p></li>
+<li><p>Base flow: occurs when there is a fairly steady flow from natural. storage</p></li>
+</ul>
+</div></div><div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="TmV3cw==" data-listing-date-sort="1738108800000" data-listing-file-modified-sort="1738401061466" data-listing-date-modified-sort="1738401061000" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
-<div class="thumbnail">
-<p><a href="./posts/chinese_new_year_2025/index.html" class="no-external"></a></p><a href="./posts/chinese_new_year_2025/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/chinese_new_year_2025/chinese-new-year-2025-year-snake.jpg" class="thumbnail-image" alt="Chinese New Year: 2025 -- Year of the Snake
-"></p>
-</a><p><a href="./posts/chinese_new_year_2025/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/chinese_new_year_2025/index.html" class="no-external">Happy Chinese New Year 2025!</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/chinese_new_year_2025/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/chinese_new_year_2025/index.html" class="no-external">Year of the Snake </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/chinese_new_year_2025/index.html" class="no-external">
-<div class="listing-date">
-Wednesday, the 29th of January, 2025
-</div>
-<div class="listing-author">
-Frank (Hongxiang) Fan, <em>Ph.D.</em>
-</div>
-<div class="listing-reading-time">
-1 min
-</div>
-</a>
+<div class="callout-title-container flex-fill">
+Important
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="cmVzZWFyY2glMkNub3Rlcw==" data-listing-date-sort="1738108800000" data-listing-file-modified-sort="1738401061466" data-listing-date-modified-sort="1738401061000" data-listing-reading-time-sort="5" data-listing-word-count-sort="906">
-<div class="thumbnail">
-<p><a href="./posts/swat_curve_number/index.html" class="no-external"></a></p><a href="./posts/swat_curve_number/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/swat_curve_number/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/swat_curve_number/index.html" class="no-external">Notes on SCS-CN in SWAT</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/swat_curve_number/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/swat_curve_number/index.html" class="no-external">The Soil Conservation Service Curve Number (SCS-CN) method is popular for predicting surface runoff due to its simplicity, ease of application, and widespread acceptance. </a>
+<div class="callout-body-container callout-body">
+<p>direct flow consists of channel flow, surface runoff and subsurface flow <span class="citation" data-cites="united1972scs">(<a href="#ref-united1972scs" role="doc-biblioref">SCS, 1972</a>)</span>.</p>
 </div>
 </div>
-<div class="metadata">
-<a href="./posts/swat_curve_number/index.html" class="no-external">
-<div class="listing-date">
-Wednesday, the 29th of January, 2025
+<section id="i_texta-0" class="level2 page-columns page-full" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="i_texta-0"><span class="header-section-number">1.1</span> <span class="math inline">\(I_\text{a} = 0\)</span></h2>
+<p>If records of natural rainfall and runoff for a large storm over a small area are used, plotting of accumulated runoff versus accumulated rainfall will show that runoff starts after some rain accumulates (there is an <em>initial abstraction</em> [<span class="math inline">\(I_\text{a}\)</span>] of rainfall) and that the double-mass line curves, becoming asymptotic to a straight line <span class="citation" data-cites="united1972scs">(<a href="#ref-united1972scs" role="doc-biblioref">SCS, 1972</a>)</span>.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>The initial abstraction (<span class="math inline">\(I_\text{a}\)</span>) consists mainly of interception, infiltration, and surface storage, all of which occur <strong>before runoff begins</strong> <span class="citation" data-cites="united1972scs">(<a href="#ref-united1972scs" role="doc-biblioref">SCS, 1972</a>)</span>.</p>
+</div></div><p>When <span class="math inline">\(I_\text{a}\)</span> is zero (i.e., rainfall and runoff begin simultaneously), the relation between rainfall, runoff, and retention (the rain not converted to runoff) at any point on the mass curve can be expressed as <span class="citation" data-cites="united1972scs">(<a href="#ref-united1972scs" role="doc-biblioref">SCS, 1972</a>)</span>:</p>
+<p><span id="eq-rainall-runoff-retention"><span class="math display">\[
+\frac{F}{S}=\frac{Q}{P}
+\tag{1}\]</span></span></p>
+<p>where <span class="math inline">\(F\)</span> is the actual retention after runoff begins, <span class="math inline">\(S\)</span> is the potential maximum retention after runoff begins, <span class="math inline">\(Q\)</span> is the actual runoff and <span class="math inline">\(P\)</span> is the rainfall.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="listing-author">
-Frank (Hongxiang) Fan, <em>Ph.D.</em>
-</div>
-<div class="listing-reading-time">
-5 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="TmV3cw==" data-listing-date-sort="1737763200000" data-listing-file-modified-sort="1738401061466" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/welcome/thumbnail.jpg" class="thumbnail-image" alt="Quarto icon and text logo above GitHub Pages logo.
-"></p>
-</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Welcome!</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/welcome/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/welcome/index.html" class="no-external">This is the first post in my blog. Welcome! </a>
+<div class="callout-title-container flex-fill">
+Note
 </div>
 </div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Saturday, the 25th of January, 2025
-</div>
-<div class="listing-author">
-Frank (Hongxiang) Fan, <em>Ph.D.</em>
-</div>
-<div class="listing-reading-time">
-1 min
-</div>
-</a>
+<div class="callout-body-container callout-body">
+<p><a href="#eq-rainall-runoff-retention" class="quarto-xref">Equation&nbsp;1</a> applies to on-site runoff; for large watersheds there is a <strong>lag</strong> in the appearance of the runoff at the stream gage, and the double mass curve produces a different relation. But if storm totals for <span class="math inline">\(P\)</span> and <span class="math inline">\(Q\)</span> are used, <a href="#eq-rainall-runoff-retention" class="quarto-xref">Equation&nbsp;1</a> does apply even for large watersheds because the effects of the lag are removed <span class="citation" data-cites="united1972scs">(<a href="#ref-united1972scs" role="doc-biblioref">SCS, 1972</a>)</span>.</p>
 </div>
 </div>
+<p><span class="math inline">\(F\)</span> is the difference between <span class="math inline">\(P\)</span> and <span class="math inline">\(Q\)</span> at any point on the mass curve, leading to:</p>
+<p><span id="eq-rainall-runoff-retention2"><span class="math display">\[
+\frac{P-Q}{S} = \frac{Q}{P}
+\tag{2}\]</span></span></p>
+<p>Solving <span class="math inline">\(Q\)</span> produces the equation:</p>
+<p><span id="eq-Q"><span class="math display">\[
+Q = \frac{P^2}{P+S}
+\tag{3}\]</span></span></p>
+</section>
+<section id="i_texta-neq-0" class="level2 page-columns page-full" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="i_texta-neq-0"><span class="header-section-number">1.2</span> <span class="math inline">\(I_\text{a} \neq 0\)</span></h2>
+<p>If <span class="math inline">\(I_\text{a} &gt; 0\)</span>, the amount of available rainfall is <span class="math inline">\(P - I_\text{a}\)</span>, leading to:</p>
+<p><span id="eq-rainall-runoff-retention-Ia"><span class="math display">\[
+\left\{
+\begin{aligned}
+\frac{F}{S}&amp;=\frac{Q}{P - I_\text{a}}\\
+Q &amp;= \frac{(Q-I_\text{a})^2}{(P-I_\text{a})+S}
+\end{aligned}
+\right.
+\tag{4}\]</span></span></p>
+<p>The relation between <span class="math inline">\(I_\text{a}\)</span> and <span class="math inline">\(S\)</span> (which includes <span class="math inline">\(I_\text{a}\)</span>) was developed by means of rainfall and runoff data from experimental small watersheds as <span class="citation" data-cites="united1972scs">(<a href="#ref-united1972scs" role="doc-biblioref">SCS, 1972</a>)</span>:</p>
+<p><span id="eq-Ia-S"><span class="math display">\[
+I_\text{a} = 0.2S
+\tag{5}\]</span></span></p>
+<p>Substituting <a href="#eq-Ia-S" class="quarto-xref">Equation&nbsp;5</a> in <a href="#eq-rainall-runoff-retention-Ia" class="quarto-xref">Equation&nbsp;4</a> gives:</p>
+<p><span id="eq-SCS-direct-runoff"><span class="math display">\[
+Q = \frac{(P-0.2S)^2}{P+0.8S}
+\tag{6}\]</span></span></p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><a href="#eq-SCS-direct-runoff" class="quarto-xref">Equation&nbsp;6</a> is the rainfall-runoff relation used in the SCS method of estimating direct runoff from storm rainfall.</p>
+</div></div></section>
+<section id="i_texta-and-s" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="i_texta-and-s"><span class="header-section-number">1.3</span> <span class="math inline">\(I_\text{a}\)</span> and <span class="math inline">\(S\)</span></h2>
+<p>The magnitudes of <span class="math inline">\(I_\text{a}\)</span> were estimated by taking the accumulated rainfall from the beginning of a storm to the time when runoff started <span class="citation" data-cites="united1972scs">(<a href="#ref-united1972scs" role="doc-biblioref">SCS, 1972</a>)</span>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="listing-no-matching d-none">
-No matching items
+<div class="callout-title-container flex-fill">
+Important
 </div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</div>
+<div class="callout-body-container callout-body">
+<p>Errors in <span class="math inline">\(I_\text{a}\)</span> were due to one or more of the following <span class="citation" data-cites="united1972scs">(<a href="#ref-united1972scs" role="doc-biblioref">SCS, 1972</a>)</span>:</p>
+<ul>
+<li><p>difficulty of determining the time when rainfall began, because of storm travel and lack of instrumentation.</p></li>
+<li><p>difficulty of determining the time when runoff began, owing to the effects of rain on the measuring installations (channel runoff) and to the lag of runoff from the watersheds.</p></li>
+<li><p>impossibility of determining how much interception prior to runoff later made its way to the soil surface and contributed to runoff.</p></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="scs-cn-in-swat" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> SCS-CN in SWAT</h1>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    subgraph main.f
+            A[main.f] --&gt; B(initialization)
+            B --&gt; C[simulate.f]
+            C --&gt; D[command.f]
+            D --&gt; E{End}
+            E --no--&gt;C
+            E --yes--&gt;F[postprocess]
+    end
+    subgraph command.f
+        D --&gt; D1[subbasin.f]
+        D1 --&gt; D2[initialization]
+        D2 --&gt; D3[surface.f]
+        D3 --&gt; D4(soil water routing)
+        D4 --&gt; D5[...]
+    end
+    subgraph surface.f
+        D3 --&gt; E2(canopy interception)
+        E2 --&gt; E3(snow melt)
+        E3 --&gt; E4(crack volume)
+        E4 --&gt; E5(add overland flow)   
+        E5 --&gt; E6(add irrigation)  
+        E6 --&gt; E7(calculate daily CN)
+        E7 --&gt; E8["volq.f (calculate runoff [surfq])"]
+        E8 --&gt; E9("inflpcp = Max(0.,precipday - surfq(j) - lid_sto)")
+        E9 --&gt; D4
+    end
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="references" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-united1972scs" class="csl-entry" role="listitem">
+SCS, 1972. <a href="https://books.google.com.au/books?id=sjOEf-5zjXgC">National engineering handbook, section 4: hydrology</a>. U.S. Department of Agriculture.
+</div>
+<div id="ref-Sreejith2024" class="csl-entry" role="listitem">
+Sreejith, K.S., Kumar, G.P., Dwarakish, G.S., 2024. A critical review of the soil conservation services – curve number method in hydrological modelling. Wetlands 44. <a href="https://doi.org/10.1007/s13157-024-01873-w">https://doi.org/10.1007/s13157-024-01873-w</a>
+</div>
+</div>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -815,6 +882,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://giscus.app/client.js" data-repo="hxfan1227/hxfan1227.github.io" data-repo-id="R_kgDONd182g" data-category="General" data-category-id="DIC_kwDONd182s4CmVHE" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="dark" data-lang="en" crossorigin="anonymous" async="">
+</script>
+<input type="hidden" id="giscus-base-theme" value="dark">
+<input type="hidden" id="giscus-alt-theme" value="dark">
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
