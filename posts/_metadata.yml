@@ -19,11 +19,8 @@ back-to-top-navigation: true
 comments:
   giscus: 
     repo: hxfan1227/hxfan1227.github.io
-    repo-id: R_kgDONd182g
     theme: dark
-    category: "Blog posts"
-    category-id: DIC_kwDONd182s4CmVHE
-
+    
 knitr:
   opts_chunk: 
     collapse: true
