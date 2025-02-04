@@ -3,9 +3,11 @@ title: "Notes on SCS-CN in SWAT"
 description: |
     The Soil Conservation Service Curve Number (SCS-CN) method is popular for predicting surface runoff due to its simplicity, ease of
     application, and widespread acceptance. 
-date: "2025-01-29"
+date: "2025-02-02"
 date-modified: last-modified
-categories: [research, notes]
+categories: 
+  - research 
+  - notes
 bibliography: refs.bib
 toc-depth: 5
 format:
