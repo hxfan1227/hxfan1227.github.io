@@ -4,4 +4,10 @@
 
 <!-- badges: end -->
 
-This is the repository for the homepage of [Hongxiang Fan](hxfan1227.github.io/).
+Repository for [hxfan1227.github.io](https://hxfan1227.github.io).
+
+This work is based on [mickael.canouil.fr](https://mickael.canouil.fr) by [Mickaël Canouil](https://github.com/mcanouil) and has been modified by [Hongxiang Fan](https://github.com/hxfan1227).  
+
+Website content is under [CC-BY-NC-SA-4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+
