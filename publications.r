@@ -1,5 +1,7 @@
 library(downlit)
 library(xml2)
+library(httr)
+library(jsonlite)
 
 create_pub_listing <- function(bib_file, author = "Hongxiang", author_zh = '范宏翔') {
   bib <- strsplit(paste(readLines(bib_file), collapse = "\n"), "\n@")[[1]]
@@ -102,4 +104,37 @@ create_pub_listing <- function(bib_file, author = "Hongxiang", author_zh = '范�
   )
 }
 
+# 加载必要的包
+
+
+# 定义 GitHub 仓库和文件路径
+owner <- "hxfan1227"  # 替换为 GitHub 用户名
+repo <- "curriculum-vitae"   # 替换为仓库名称
+path <- "data/cv.bib" # 替换为文件路径，例如 "README.md"
+
+# 构建 API URL
+url <- paste0("https://api.github.com/repos/", owner, "/", repo, "/contents/", path)
+
+response <- GET(url)
+
+# 检查请求是否成功
+if (status_code(response) == 200) {
+  # 解析 JSON 响应
+  file_info <- fromJSON(content(response, "text"))
+  
+  # 获取文件内容（Base64 编码）
+  file_content <- file_info$content
+  
+  # 解码 Base64 内容
+  decoded_content <- rawToChar(base64enc::base64decode(file_content))
+  
+  # 打印文件内容
+  writeLines(decoded_content, 'publications.bib')
+} else {
+  # 如果请求失败，打印错误信息
+  cat("Failed to fetch file. Status code:", status_code(response), "\n")
+}
+
 create_pub_listing("publications.bib")
+
+unlink('publications.bib')

@@ -1,123 +1,39 @@
 - author:
-  - family: 孟元可
-  - family: 叶许春
-  - family: 徐力刚
-  - family: 徐昔保
-  - family: 范宏翔
-  - family: 黄涛
-  container-title: 湿地科学
-  doi: 10.13248/j.cnki.wetlandsci.2018.03.013
-  id: MengYeXuEtAl2018WS_CH
-  issn: 1672-5948
-  issue: 03
-  issued: 2018-06
-  keyword: chinese
-  page: 360-369
-  title: 2000--2015年鄱阳湖区植被净初级生产力变化及驱动因素分析
+  - family: Shi
+    given: Weiwei
+  - family: Wu
+    given: Wenxin
+  - family: Fan
+    given: Hongxiang
+  - family: Sun
+    given: Qingqing
+  - family: Niu
+    given: Xueqi
+  - family: Wang
+    given: Shilu
+  - family: Li
+    given: Si-liang
+  - family: Liang
+    given: Shengkang
+  - family: Yan
+    given: Zhifeng
+  container-title: Journal of Hydrology
+  doi: doi.org/10.1016/j.jhydrol.2025.132794
+  id: ShiWuFanEtAl2025JoH
+  issn: 0022-1694
+  issued: 2025-02
+  keyword: firstauthor
+  page: 132794
+  title: "Estimating CO$_2$ and CH$_4$ fluxes from reservoirs: Model
+    development and site-level study"
+  title-short: Estimating CO$_2$ and CH$_4$ fluxes from reservoirs
   type: article-journal
-  volume: 16
-  journal-title: '*湿地科学*'
-  date: 2018-06
-  path: https://doi.org/10.13248/j.cnki.wetlandsci.2018.03.013
-  position: '5/6'
-  first: '&emsp;&emsp;&emsp;'
-- author:
-  - family: 冯文娟
-  - family: 徐力刚
-  - family: 范宏翔
-  - family: 李新艳
-  - family: 董磊
-  container-title: 陕西师范大学学报(自然科学版)
-  doi: 10.15983/j.cnki.jsnu.2015.04.441
-  id: FengXuFanEtAl2015JoSNUNSE_CH
-  issn: 1672-4291
-  issue: 04
-  issued: 2015-07
-  keyword: chinese
-  page: 83-88
-  title: 梅西湖与鄱阳湖水位变化关系及其水量交换过程分析
-  type: article-journal
-  volume: 43
-  journal-title: '*陕西师范大学学报(自然科学版)*'
-  date: 2015-07
-  path: https://doi.org/10.15983/j.cnki.jsnu.2015.04.441
-  position: '3/5'
-  first: '&emsp;&emsp;&emsp;'
-- author:
-  - family: 毛智宇
-  - family: 徐力刚
-  - family: 赖锡军
-  - family: 王晓龙
-  - family: 李云良
-  - family: 李相虎
-  - family: 蔡永久
-  - family: 范宏翔
-  - family: 吴亚坤
-  - family: 魏凡凯
-  container-title: 湖泊科学
-  doi: 10.18307/2023.0321
-  id: MaoXuLaiEtAl2023JoLS_CH
-  issn: 1003-5427
-  issue: 03
-  issued: 2023-03
-  keyword: chinese
-  page: 1022-1036
-  title: 基于综合指标法的鄱阳湖生态系统健康评价
-  type: article-journal
-  volume: 35
-  journal-title: '*湖泊科学*'
-  date: 2023-03
-  path: https://doi.org/10.18307/2023.0321
-  position: '8/10'
-  first: '&emsp;&emsp;&emsp;'
-- author:
-  - family: 曹宇贤
-  - family: 徐力刚
-  - family: 范宏翔
-  - family: 毛智宇
-  - family: 程俊翔
-  - family: 王殿常
-  - family: 吴亚坤
-  container-title: 湖泊科学
-  doi: 10.18307/2022.0119
-  id: CaoXuFanEtAl2022JoLS_CH
-  issn: 1003-5427
-  issue: 01
-  issued: 2022-01
-  keyword: chinese
-  page: 232-246
-  title: 1960年以来气候变化与人类活动对鄱阳湖流域生态径流改变的影响
-  type: article-journal
-  volume: 34
-  journal-title: '*湖泊科学*'
-  date: 2022-01
-  path: https://doi.org/10.18307/2022.0119
-  position: '3/7'
-  first: '&emsp;&emsp;&emsp;'
-- author:
-  - family: 李楷文
-  - family: 丁梦瑶
-  - family: 范宏翔
-  - family: 吴华武
-  - family: 雷蕊宇
-  - family: 付丛生
-  - family: 李静
-  - family: 辛未
-  - family: 张赐成
-  container-title: 湖泊科学
-  id: LiDingFanEtAl2025JoLS_CH
-  issn: 1003-5427
-  issue: 01
-  issued: 2025-01
-  keyword: chinese
-  page: 1-13
-  title: 基于氢氧稳定同位素的鄱阳湖流域"五河"新水比例及其滞留时间量化研究
-  type: article-journal
-  volume: 37
-  journal-title: '*湖泊科学*'
-  date: 2025-01
+  url: "https://www.sciencedirect.com/science/article/pii/S0022169425001325"
+  journal-title: '*Journal of Hydrology*'
+  date: 2025-02
+  path: https://doi.org/doi.org/10.1016/j.jhydrol.2025.132794
   position: '3/9'
-  first: '&emsp;&emsp;&emsp;'
+  first: '*As first or corresponding*'
 - author:
   - family: 王辉
   - family: 雷蕊宇
@@ -137,309 +53,6 @@
   path: https://doi.org/10.19501/j.cnki.1006-2009.2023.06.012
   position: '4/4'
   first: '*As first or corresponding*'
-- author:
-  - family: 黄涛
-  - family: 徐力刚
-  - family: 范宏翔
-  - family: 孟元可
-  container-title: 环境科学研究
-  doi: 10.13198/j.issn.1001-6929.2018.05.22
-  id: HuangXuFanEtAl2018RoES_CH
-  issn: 1001-6929
-  issue: 10
-  issued: 2018-10
-  keyword: chinese
-  page: 1677-1684
-  title: 长江流域干旱时空变化特征及演变趋势
-  type: article-journal
-  volume: 31
-  journal-title: '*环境科学研究*'
-  date: 2018-10
-  path: https://doi.org/10.13198/j.issn.1001-6929.2018.05.22
-  position: '3/4'
-  first: '&emsp;&emsp;&emsp;'
-- author:
-  - family: 陈远
-  - family: 范宏翔
-  - family: 彭凯
-  - family: 邓建明
-  - family: 彭霁虹
-  container-title: 河南师范大学学报(自然科学版)
-  doi: 10.16366/j.cnki.1000-2367.2023.08.31.0002
-  id: ChenFanPengEtAl2025JoHNUSE_CH
-  issn: 1000-2367
-  issue: 01
-  issued: 2025-01
-  keyword: chinese
-  page: 125-135
-  title: 基线选择对热浪事件计算方法的影响
-  type: article-journal
-  journal-title: '*河南师范大学学报(自然科学版)*'
-  date: 2025-01
-  path: https://doi.org/10.16366/j.cnki.1000-2367.2023.08.31.0002
-  position: '2/5'
-  first: '&emsp;&emsp;&emsp;'
-- author:
-  - family: 鲁照
-  - family: 黄河清
-  - family: 徐力刚
-  - family: 范宏翔
-  container-title: 环境监测管理与技术
-  doi: 10.19501/j.cnki.1006-2009.2021.04.007
-  id: LuHuangXuEtAl2021TAaToEM_CH
-  issn: 1006-2009
-  issue: 04
-  issued: 2021-08
-  keyword: chinese
-  page: 30-34
-  title: 基于熵权的WQI法在鄱阳湖水质评价中的应用
-  type: article-journal
-  volume: 33
-  journal-title: '*环境监测管理与技术*'
-  date: 2021-08
-  path: https://doi.org/10.19501/j.cnki.1006-2009.2021.04.007
-  position: '4/4'
-  first: '&emsp;&emsp;&emsp;'
-- author:
-  - family: 范宏翔
-  - family: 何菡丹
-  - family: 徐力刚
-  - family: 张明睿
-  - family: 姜加虎
-  container-title: 湖泊科学
-  doi: 10.18307/2021.0319
-  id: FanHeXuEtAl2021JoLS_CH
-  issn: 1003-5427
-  issue: 03
-  issued: 2021-03
-  keyword: chinesefirstauthor
-  page: 866-878
-  title: 基于长短记忆模型的鄱阳湖流域径流模拟及其演变的归因分析
-  type: article-journal
-  volume: 33
-  journal-title: '*湖泊科学*'
-  date: 2021-03
-  path: https://doi.org/10.18307/2021.0319
-  position: '1/5'
-  first: '*As first or corresponding*'
-- author:
-  - family: 刘星根
-  - family: 谭志强
-  - family: 范宏翔
-  container-title: 人民长江
-  doi: 10.16232/j.cnki.1001-4179.2021.05.011
-  id: LiuTanFan2021YR_CH
-  issn: 1001-4179
-  issue: 05
-  issued: 2021-05
-  keyword: chinese
-  page: 66-72
-  title: 赣江尾闾碟形湖水体季节性分布特征
-  type: article-journal
-  volume: 52
-  journal-title: '*人民长江*'
-  date: 2021-05
-  path: https://doi.org/10.16232/j.cnki.1001-4179.2021.05.011
-  position: '3/3'
-  first: '&emsp;&emsp;&emsp;'
-- author:
-  - family: 王霞
-  - family: 刘雷
-  - family: 何跃
-  - family: 范宏翔
-  container-title: 环境监测管理与技术
-  doi: 10.19501/j.cnki.1006-2009.20190313.008
-  id: WangLiuHeEtAl2019TAaToEM_CH
-  issn: 1006-2009
-  issue: 02
-  issued: 2019-03
-  keyword: chinese
-  page: 58-61
-  title: 洪泽湖水体富营养化时空分布特征与影响因素分析
-  type: article-journal
-  volume: 31
-  journal-title: '*环境监测管理与技术*'
-  date: 2019-03
-  path: https://doi.org/10.19501/j.cnki.1006-2009.20190313.008
-  position: '4/4'
-  first: '&emsp;&emsp;&emsp;'
-- author:
-  - family: 张明睿
-  - family: 郑俊
-  - family: 徐力刚
-  - family: 范宏翔
-  - family: 张德伟
-  container-title: 环境监测管理与技术
-  doi: 10.19501/j.cnki.1006-2009.2021.04.006
-  id: ZhangZhengXuEtAl2021TAaToEM_CH
-  issn: 1006-2009
-  issue: 04
-  issued: 2021-08
-  keyword: chinese
-  page: 25-29
-  title: 城市小流域面源污染输出特征及污染负荷分类核算研究
-  type: article-journal
-  volume: 33
-  journal-title: '*环境监测管理与技术*'
-  date: 2021-08
-  path: https://doi.org/10.19501/j.cnki.1006-2009.2021.04.006
-  position: '4/5'
-  first: '&emsp;&emsp;&emsp;'
-- author:
-  - family: 程俊翔
-  - family: 徐力刚
-  - family: 姜加虎
-  - family: 谭志强
-  - family: 喻崎雯
-  - family: 范宏翔
-  container-title: 农业环境科学学报
-  id: ChengXuJiangEtAl2016JoAS_CH
-  issn: 1672-2043
-  issue: 11
-  issued: 2016-11
-  keyword: chinese
-  page: 2146-2153
-  title: 洞庭湖流域径流量对气候变化和人类活动的响应研究
-  type: article-journal
-  volume: 35
-  journal-title: '*农业环境科学学报*'
-  date: 2016-11
-  position: '6/6'
-  first: '&emsp;&emsp;&emsp;'
-- author:
-  - family: 丁艺鼎
-  - family: 蒋名亮
-  - family: 徐力刚
-  - family: 范宏翔
-  - family: 吕海深
-  container-title: 湖泊科学
-  id: DingJiangXuEtAl2024JoLS_CH
-  issn: 1003-5427
-  issue: 01
-  issued: 2024-12
-  keyword: chinese
-  page: 320-332
-  title: 基于鲸鱼优化算法的长短期记忆模型水库洪水预报
-  type: article-journal
-  volume: 36
-  journal-title: '*湖泊科学*'
-  date: 2024-12
-  position: '4/5'
-  first: '&emsp;&emsp;&emsp;'
-- author:
-  - family: 丁艺鼎
-  - family: 范宏翔
-  - family: 徐力刚
-  - family: 蒋名亮
-  - family: 吕海深
-  - family: 朱永华
-  - family: 程俊翔
-  container-title: 湖泊科学
-  id: DingFanXuEtAl2024JoLS_CH
-  issn: 1003-5427
-  issue: 04
-  issued: 2024-12
-  keyword: chinesefirstauthor
-  page: 1046-1060
-  title: 可解释性长短期记忆模型用于预测湖泊总磷浓度变化
-  type: article-journal
-  volume: 36
-  journal-title: '*湖泊科学*'
-  date: 2024-12
-  position: '2/7'
-  first: '*As first or corresponding*'
-- author:
-  - family: 范宏翔
-  - family: 徐力刚
-  - family: 赵旭
-  - family: 胡岳峰
-  container-title: 生态环境学报
-  doi: 10.16258/j.cnki.1674-5906.2015.02.012
-  id: FanXuZhaoEtAl2015EaES_CH
-  issn: 1674-5906
-  issue: 02
-  issued: 2015-12
-  keyword: chinesefirstauthor
-  page: 255-262
-  title: 太湖流域典型稻-麦轮作农田区氮素流失过程研究
-  type: article-journal
-  volume: 24
-  journal-title: '*生态环境学报*'
-  date: 2015-12
-  path: https://doi.org/10.16258/j.cnki.1674-5906.2015.02.012
-  position: '1/4'
-  first: '*As first or corresponding*'
-- author:
-  - family: 杜冰雪
-  - family: 徐力刚
-  - family: 张杰
-  - family: 范宏翔
-  - family: 程俊翔
-  - family: 黄涛
-  - family: 姜加虎
-  container-title: 环境科学研究
-  doi: 10.13198/j.issn.1001-6929.2018.10.07
-  id: DuXuZhangEtAl2019RoES_CH
-  issn: 1001-6929
-  issue: 05
-  issued: 2019-05
-  keyword: chinese
-  page: 795-801
-  title: 鄱阳湖富营养化时空变化特征及其与水位的关系
-  type: article-journal
-  volume: 32
-  journal-title: '*环境科学研究*'
-  date: 2019-05
-  path: https://doi.org/10.13198/j.issn.1001-6929.2018.10.07
-  position: '4/7'
-  first: '&emsp;&emsp;&emsp;'
-- author:
-  - family: 范宏翔
-  - family: 徐力刚
-  - family: 朱华
-  - family: 鲁照
-  - family: 曹宇贤
-  - family: 吴亚坤
-  - family: 姜加虎
-  container-title: 湖泊科学
-  doi: 10.18307/2021.0419
-  id: FanXuZhuEtAl2021JoLS_CH
-  issn: 1003-5427
-  issue: 04
-  issued: 2021-04
-  keyword: chinesefirstauthor
-  page: 1175-1187
-  title: 气候变化和人类活动对鄱阳湖水龄影响的定量区分
-  type: article-journal
-  volume: 33
-  journal-title: '*湖泊科学*'
-  date: 2021-04
-  path: https://doi.org/10.18307/2021.0419
-  position: '1/7'
-  first: '*As first or corresponding*'
-- author:
-  - family: 杜冰雪
-  - family: 徐力刚
-  - family: 蒋名亮
-  - family: 程俊翔
-  - family: 谭志强
-  - family: 范宏翔
-  container-title: 湿地科学
-  doi: 10.13248/j.cnki.wetlandsci.2020.01.003
-  id: DuXuJiangEtAl2020WS_CH
-  issn: 1672-5948
-  issue: 01
-  issued: 2020-02
-  keyword: chinese
-  page: 20-27
-  title: 2000--2014年洞庭湖区植物面积变化及其与湖泊水位的关系
-  type: article-journal
-  volume: 18
-  journal-title: '*湿地科学*'
-  date: 2020-02
-  path: https://doi.org/10.13248/j.cnki.wetlandsci.2020.01.003
-  position: '6/6'
-  first: '&emsp;&emsp;&emsp;'
 - author:
   - family: Cheng
     given: Junxiang
@@ -644,63 +257,6 @@
   date: 2018-12
   path: https://doi.org/10.3390/w11010013
   position: '3/3'
-  first: '&emsp;&emsp;&emsp;'
-- author:
-  - family: Jiang
-    given: Mingliang
-  - family: Xu
-    given: Ligang
-  - family: Chen
-    given: Xiaobing
-  - family: Zhu
-    given: Hua
-  - family: Fan
-    given: Hongxiang
-  container-title: Sustainability
-  genre: Journal Article
-  id: JiangXuChenEtAl2020S
-  issn: 2071-1050
-  issue: 21
-  issued: 2020-10
-  keyword: otherauthor
-  page: 9033
-  title: "Soil quality assessment based on a minimum data set: A case
-    study of a county in the typical river delta wetlands"
-  title-short: Soil quality assessment based on a minimum data set
-  type: article-journal
-  url: "https://www.mdpi.com/2071-1050/12/21/9033"
-  volume: 12
-  journal-title: '*Sustainability*'
-  date: 2020-10
-  position: '5/5'
-  first: '&emsp;&emsp;&emsp;'
-- author:
-  - family: Li
-    given: Jing
-  - family: Song
-    given: Fan
-  - family: Bao
-    given: Zhicheng
-  - family: Fan
-    given: Hongxiang
-  - family: Wu
-    given: Huawu
-  container-title: Water
-  genre: Journal Article
-  id: LiSongBaoEtAl2022W
-  issn: 2073-4441
-  issue: 3
-  issued: 2022-02
-  keyword: otherauthor
-  page: 506
-  title: Insights into shallow freshwater lakes hydrology in the yangtze
-    floodplain from stable water isotope tracers
-  type: article-journal
-  url: "https://www.mdpi.com/2073-4441/14/3/506"
-  volume: 14
-  journal-title: '*Water*'
-  date: 2022-02
-  position: '4/5'
   first: '&emsp;&emsp;&emsp;'
 - author:
   - family: Wu
@@ -1188,4 +744,496 @@
   date: 2024-03
   path: https://doi.org/10.1016/j.scitotenv.2024.170689
   position: '7/8'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: Jiang
+    given: Mingliang
+  - family: Xu
+    given: Ligang
+  - family: Chen
+    given: Xiaobing
+  - family: Zhu
+    given: Hua
+  - family: Fan
+    given: Hongxiang
+  container-title: Sustainability
+  doi: 10.3390/su12219033
+  genre: Journal Article
+  id: JiangXuChenEtAl2020S
+  issn: 2071-1050
+  issue: 21
+  issued: 2020-10
+  keyword: otherauthor
+  page: 9033
+  title: "Soil quality assessment based on a minimum data set: A case
+    study of a county in the typical river delta wetlands"
+  title-short: Soil quality assessment based on a minimum data set
+  type: article-journal
+  url: "https://www.mdpi.com/2071-1050/12/21/9033"
+  volume: 12
+  journal-title: '*Sustainability*'
+  date: 2020-10
+  path: https://doi.org/10.3390/su12219033
+  position: '5/5'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: Li
+    given: Jing
+  - family: Song
+    given: Fan
+  - family: Bao
+    given: Zhicheng
+  - family: Fan
+    given: Hongxiang
+  - family: Wu
+    given: Huawu
+  container-title: Water
+  doi: 10.3390/su12219033
+  genre: Journal Article
+  id: LiSongBaoEtAl2022W
+  issn: 2073-4441
+  issue: 3
+  issued: 2022-02
+  keyword: otherauthor
+  page: 506
+  title: Insights into shallow freshwater lakes hydrology in the yangtze
+    floodplain from stable water isotope tracers
+  type: article-journal
+  url: "https://www.mdpi.com/2073-4441/14/3/506"
+  volume: 14
+  journal-title: '*Water*'
+  date: 2022-02
+  path: https://doi.org/10.3390/su12219033
+  position: '4/5'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: 孟元可
+  - family: 叶许春
+  - family: 徐力刚
+  - family: 徐昔保
+  - family: 范宏翔
+  - family: 黄涛
+  container-title: 湿地科学
+  doi: 10.13248/j.cnki.wetlandsci.2018.03.013
+  id: MengYeXuEtAl2018WS_CH
+  issn: 1672-5948
+  issue: 03
+  issued: 2018-06
+  keyword: chinese
+  page: 360-369
+  title: 2000--2015年鄱阳湖区植被净初级生产力变化及驱动因素分析
+  type: article-journal
+  volume: 16
+  journal-title: '*湿地科学*'
+  date: 2018-06
+  path: https://doi.org/10.13248/j.cnki.wetlandsci.2018.03.013
+  position: '5/6'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: 冯文娟
+  - family: 徐力刚
+  - family: 范宏翔
+  - family: 李新艳
+  - family: 董磊
+  container-title: 陕西师范大学学报(自然科学版)
+  doi: 10.15983/j.cnki.jsnu.2015.04.441
+  id: FengXuFanEtAl2015JoSNUNSE_CH
+  issn: 1672-4291
+  issue: 04
+  issued: 2015-07
+  keyword: chinese
+  page: 83-88
+  title: 梅西湖与鄱阳湖水位变化关系及其水量交换过程分析
+  type: article-journal
+  volume: 43
+  journal-title: '*陕西师范大学学报(自然科学版)*'
+  date: 2015-07
+  path: https://doi.org/10.15983/j.cnki.jsnu.2015.04.441
+  position: '3/5'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: 毛智宇
+  - family: 徐力刚
+  - family: 赖锡军
+  - family: 王晓龙
+  - family: 李云良
+  - family: 李相虎
+  - family: 蔡永久
+  - family: 范宏翔
+  - family: 吴亚坤
+  - family: 魏凡凯
+  container-title: 湖泊科学
+  doi: 10.18307/2023.0321
+  id: MaoXuLaiEtAl2023JoLS_CH
+  issn: 1003-5427
+  issue: 03
+  issued: 2023-03
+  keyword: chinese
+  page: 1022-1036
+  title: 基于综合指标法的鄱阳湖生态系统健康评价
+  type: article-journal
+  volume: 35
+  journal-title: '*湖泊科学*'
+  date: 2023-03
+  path: https://doi.org/10.18307/2023.0321
+  position: '8/10'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: 曹宇贤
+  - family: 徐力刚
+  - family: 范宏翔
+  - family: 毛智宇
+  - family: 程俊翔
+  - family: 王殿常
+  - family: 吴亚坤
+  container-title: 湖泊科学
+  doi: 10.18307/2022.0119
+  id: CaoXuFanEtAl2022JoLS_CH
+  issn: 1003-5427
+  issue: 01
+  issued: 2022-01
+  keyword: chinese
+  page: 232-246
+  title: 1960年以来气候变化与人类活动对鄱阳湖流域生态径流改变的影响
+  type: article-journal
+  volume: 34
+  journal-title: '*湖泊科学*'
+  date: 2022-01
+  path: https://doi.org/10.18307/2022.0119
+  position: '3/7'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: 李楷文
+  - family: 丁梦瑶
+  - family: 范宏翔
+  - family: 吴华武
+  - family: 雷蕊宇
+  - family: 付丛生
+  - family: 李静
+  - family: 辛未
+  - family: 张赐成
+  container-title: 湖泊科学
+  doi: 10.18307/2025.0142
+  id: LiDingFanEtAl2025JoLS_CH
+  issn: 1003-5427
+  issue: 01
+  issued: 2025-01
+  keyword: chinese
+  page: 1-13
+  title: 基于氢氧稳定同位素的鄱阳湖流域"五河"新水比例及其滞留时间量化研究
+  type: article-journal
+  volume: 37
+  journal-title: '*湖泊科学*'
+  date: 2025-01
+  path: https://doi.org/10.18307/2025.0142
+  position: '3/9'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: 黄涛
+  - family: 徐力刚
+  - family: 范宏翔
+  - family: 孟元可
+  container-title: 环境科学研究
+  doi: 10.13198/j.issn.1001-6929.2018.05.22
+  id: HuangXuFanEtAl2018RoES_CH
+  issn: 1001-6929
+  issue: 10
+  issued: 2018-10
+  keyword: chinese
+  page: 1677-1684
+  title: 长江流域干旱时空变化特征及演变趋势
+  type: article-journal
+  volume: 31
+  journal-title: '*环境科学研究*'
+  date: 2018-10
+  path: https://doi.org/10.13198/j.issn.1001-6929.2018.05.22
+  position: '3/4'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: 陈远
+  - family: 范宏翔
+  - family: 彭凯
+  - family: 邓建明
+  - family: 彭霁虹
+  container-title: 河南师范大学学报(自然科学版)
+  doi: 10.16366/j.cnki.1000-2367.2023.08.31.0002
+  id: ChenFanPengEtAl2025JoHNUSE_CH
+  issn: 1000-2367
+  issue: 01
+  issued: 2025-01
+  keyword: chinese
+  page: 125-135
+  title: 基线选择对热浪事件计算方法的影响
+  type: article-journal
+  journal-title: '*河南师范大学学报(自然科学版)*'
+  date: 2025-01
+  path: https://doi.org/10.16366/j.cnki.1000-2367.2023.08.31.0002
+  position: '2/5'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: 鲁照
+  - family: 黄河清
+  - family: 徐力刚
+  - family: 范宏翔
+  container-title: 环境监测管理与技术
+  doi: 10.19501/j.cnki.1006-2009.2021.04.007
+  id: LuHuangXuEtAl2021TAaToEM_CH
+  issn: 1006-2009
+  issue: 04
+  issued: 2021-08
+  keyword: chinese
+  page: 30-34
+  title: 基于熵权的WQI法在鄱阳湖水质评价中的应用
+  type: article-journal
+  volume: 33
+  journal-title: '*环境监测管理与技术*'
+  date: 2021-08
+  path: https://doi.org/10.19501/j.cnki.1006-2009.2021.04.007
+  position: '4/4'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: 范宏翔
+  - family: 何菡丹
+  - family: 徐力刚
+  - family: 张明睿
+  - family: 姜加虎
+  container-title: 湖泊科学
+  doi: 10.18307/2021.0319
+  id: FanHeXuEtAl2021JoLS_CH
+  issn: 1003-5427
+  issue: 03
+  issued: 2021-03
+  keyword: chinesefirstauthor
+  page: 866-878
+  title: 基于长短记忆模型的鄱阳湖流域径流模拟及其演变的归因分析
+  type: article-journal
+  volume: 33
+  journal-title: '*湖泊科学*'
+  date: 2021-03
+  path: https://doi.org/10.18307/2021.0319
+  position: '1/5'
+  first: '*As first or corresponding*'
+- author:
+  - family: 刘星根
+  - family: 谭志强
+  - family: 范宏翔
+  container-title: 人民长江
+  doi: 10.16232/j.cnki.1001-4179.2021.05.011
+  id: LiuTanFan2021YR_CH
+  issn: 1001-4179
+  issue: 05
+  issued: 2021-05
+  keyword: chinese
+  page: 66-72
+  title: 赣江尾闾碟形湖水体季节性分布特征
+  type: article-journal
+  volume: 52
+  journal-title: '*人民长江*'
+  date: 2021-05
+  path: https://doi.org/10.16232/j.cnki.1001-4179.2021.05.011
+  position: '3/3'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: 王霞
+  - family: 刘雷
+  - family: 何跃
+  - family: 范宏翔
+  container-title: 环境监测管理与技术
+  doi: 10.19501/j.cnki.1006-2009.20190313.008
+  id: WangLiuHeEtAl2019TAaToEM_CH
+  issn: 1006-2009
+  issue: 02
+  issued: 2019-03
+  keyword: chinese
+  page: 58-61
+  title: 洪泽湖水体富营养化时空分布特征与影响因素分析
+  type: article-journal
+  volume: 31
+  journal-title: '*环境监测管理与技术*'
+  date: 2019-03
+  path: https://doi.org/10.19501/j.cnki.1006-2009.20190313.008
+  position: '4/4'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: 张明睿
+  - family: 郑俊
+  - family: 徐力刚
+  - family: 范宏翔
+  - family: 张德伟
+  container-title: 环境监测管理与技术
+  doi: 10.19501/j.cnki.1006-2009.2021.04.006
+  id: ZhangZhengXuEtAl2021TAaToEM_CH
+  issn: 1006-2009
+  issue: 04
+  issued: 2021-08
+  keyword: chinese
+  page: 25-29
+  title: 城市小流域面源污染输出特征及污染负荷分类核算研究
+  type: article-journal
+  volume: 33
+  journal-title: '*环境监测管理与技术*'
+  date: 2021-08
+  path: https://doi.org/10.19501/j.cnki.1006-2009.2021.04.006
+  position: '4/5'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: 程俊翔
+  - family: 徐力刚
+  - family: 姜加虎
+  - family: 谭志强
+  - family: 喻崎雯
+  - family: 范宏翔
+  container-title: 农业环境科学学报
+  doi: 10.11654/jaes.2016-0554
+  id: ChengXuJiangEtAl2016JoAS_CH
+  issn: 1672-2043
+  issue: 11
+  issued: 2016-11
+  keyword: chinese
+  page: 2146-2153
+  title: 洞庭湖流域径流量对气候变化和人类活动的响应研究
+  type: article-journal
+  volume: 35
+  journal-title: '*农业环境科学学报*'
+  date: 2016-11
+  path: https://doi.org/10.11654/jaes.2016-0554
+  position: '6/6'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: 丁艺鼎
+  - family: 蒋名亮
+  - family: 徐力刚
+  - family: 范宏翔
+  - family: 吕海深
+  container-title: 湖泊科学
+  doi: 10.18307/2024.0143
+  id: DingJiangXuEtAl2024JoLS_CH
+  issn: 1003-5427
+  issue: 01
+  issued: 2024-12
+  keyword: chinese
+  page: 320-332
+  title: 基于鲸鱼优化算法的长短期记忆模型水库洪水预报
+  type: article-journal
+  volume: 36
+  journal-title: '*湖泊科学*'
+  date: 2024-12
+  path: https://doi.org/10.18307/2024.0143
+  position: '4/5'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: 丁艺鼎
+  - family: 范宏翔
+  - family: 徐力刚
+  - family: 蒋名亮
+  - family: 吕海深
+  - family: 朱永华
+  - family: 程俊翔
+  container-title: 湖泊科学
+  doi: 10.18307/2024.0415
+  id: DingFanXuEtAl2024JoLS_CH
+  issn: 1003-5427
+  issue: 04
+  issued: 2024-12
+  keyword: chinesefirstauthor
+  page: 1046-1060
+  title: 可解释性长短期记忆模型用于预测湖泊总磷浓度变化
+  type: article-journal
+  volume: 36
+  journal-title: '*湖泊科学*'
+  date: 2024-12
+  path: https://doi.org/10.18307/2024.0415
+  position: '2/7'
+  first: '*As first or corresponding*'
+- author:
+  - family: 范宏翔
+  - family: 徐力刚
+  - family: 赵旭
+  - family: 胡岳峰
+  container-title: 生态环境学报
+  doi: 10.16258/j.cnki.1674-5906.2015.02.012
+  id: FanXuZhaoEtAl2015EaES_CH
+  issn: 1674-5906
+  issue: 02
+  issued: 2015-12
+  keyword: chinesefirstauthor
+  page: 255-262
+  title: 太湖流域典型稻-麦轮作农田区氮素流失过程研究
+  type: article-journal
+  volume: 24
+  journal-title: '*生态环境学报*'
+  date: 2015-12
+  path: https://doi.org/10.16258/j.cnki.1674-5906.2015.02.012
+  position: '1/4'
+  first: '*As first or corresponding*'
+- author:
+  - family: 杜冰雪
+  - family: 徐力刚
+  - family: 张杰
+  - family: 范宏翔
+  - family: 程俊翔
+  - family: 黄涛
+  - family: 姜加虎
+  container-title: 环境科学研究
+  doi: 10.13198/j.issn.1001-6929.2018.10.07
+  id: DuXuZhangEtAl2019RoES_CH
+  issn: 1001-6929
+  issue: 05
+  issued: 2019-05
+  keyword: chinese
+  page: 795-801
+  title: 鄱阳湖富营养化时空变化特征及其与水位的关系
+  type: article-journal
+  volume: 32
+  journal-title: '*环境科学研究*'
+  date: 2019-05
+  path: https://doi.org/10.13198/j.issn.1001-6929.2018.10.07
+  position: '4/7'
+  first: '&emsp;&emsp;&emsp;'
+- author:
+  - family: 范宏翔
+  - family: 徐力刚
+  - family: 朱华
+  - family: 鲁照
+  - family: 曹宇贤
+  - family: 吴亚坤
+  - family: 姜加虎
+  container-title: 湖泊科学
+  doi: 10.18307/2021.0419
+  id: FanXuZhuEtAl2021JoLS_CH
+  issn: 1003-5427
+  issue: 04
+  issued: 2021-04
+  keyword: chinesefirstauthor
+  page: 1175-1187
+  title: 气候变化和人类活动对鄱阳湖水龄影响的定量区分
+  type: article-journal
+  volume: 33
+  journal-title: '*湖泊科学*'
+  date: 2021-04
+  path: https://doi.org/10.18307/2021.0419
+  position: '1/7'
+  first: '*As first or corresponding*'
+- author:
+  - family: 杜冰雪
+  - family: 徐力刚
+  - family: 蒋名亮
+  - family: 程俊翔
+  - family: 谭志强
+  - family: 范宏翔
+  container-title: 湿地科学
+  doi: 10.13248/j.cnki.wetlandsci.2020.01.003
+  id: DuXuJiangEtAl2020WS_CH
+  issn: 1672-5948
+  issue: 01
+  issued: 2020-02
+  keyword: chinese
+  page: 20-27
+  title: 2000--2014年洞庭湖区植物面积变化及其与湖泊水位的关系
+  type: article-journal
+  volume: 18
+  journal-title: '*湿地科学*'
+  date: 2020-02
+  path: https://doi.org/10.13248/j.cnki.wetlandsci.2020.01.003
+  position: '6/6'
   first: '&emsp;&emsp;&emsp;'
