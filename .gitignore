@@ -48,4 +48,5 @@ rsconnect/
 
 /.quarto/
 /_site/
+/_freeze/
 
