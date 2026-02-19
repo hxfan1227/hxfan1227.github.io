@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/projects.html",
+    "items": []
+  },
+  {
     "listing": "/publications.html",
     "items": []
   },
@@ -10,9 +14,5 @@
       "/posts/chinese_new_year_2025/index.html",
       "/posts/welcome/index.html"
     ]
-  },
-  {
-    "listing": "/projects.html",
-    "items": []
   }
 ]
