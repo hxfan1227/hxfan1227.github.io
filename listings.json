@@ -1,9 +1,5 @@
 [
   {
-    "listing": "/publications.html",
-    "items": []
-  },
-  {
     "listing": "/blog.html",
     "items": [
       "/posts/swat_curve_number/index.html",
@@ -13,6 +9,10 @@
   },
   {
     "listing": "/projects.html",
+    "items": []
+  },
+  {
+    "listing": "/publications.html",
     "items": []
   }
 ]
